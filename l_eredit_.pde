@@ -33,8 +33,8 @@ int []pos4={0, 1, 2, 3};
 
 
 void setup() {
-  //fullScreen();
-  size(400, 400);
+  fullScreen();
+  //size(400, 400);
   background(255);
 
   target =new File(obbiettivo_add2);
@@ -82,11 +82,11 @@ void setup() {
     }
     if (line!=null) {
       String [] temp=split(line, '|');
-      domanda4=concat(domanda2, subset(temp, 0, 1));
-      ans14=concat(ans12, subset(temp, 1, 1));
-      ans24=concat(ans22, subset(temp, 2, 1));
-      ans34=concat(ans12, subset(temp, 3, 1));
-      ans44=concat(ans22, subset(temp, 4, 1));
+      domanda4=concat(domanda4, subset(temp, 0, 1));
+      ans14=concat(ans14, subset(temp, 1, 1));
+      ans24=concat(ans24, subset(temp, 2, 1));
+      ans34=concat(ans34, subset(temp, 3, 1));
+      ans44=concat(ans44, subset(temp, 4, 1));
     }
   } while (line!=null);
 }
@@ -130,7 +130,7 @@ void draw() {
     } else if (pos2[1]==1) {
       text(ans22[index2], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
     }
-    
+
     //background(255,0,0);
   } else if (screen==1) {
     background(255);
@@ -140,7 +140,7 @@ void draw() {
     rect(width/10, height/8, (width/10)*8, height*0.4);
     fill(0);
     textSize(100);
-    text("domanda", width/10, height/8, (width/10)*8, height*0.4);
+    text(domanda4[index4], width/10, height/8, (width/10)*8, height*0.4);
     if (ans3==0) {
       fill(255);
     } else if (ans3==1) {
@@ -151,7 +151,16 @@ void draw() {
     rect(width/10, (height/8)*6, (width/10)*4-10, (height/8));
     fill(0);
     textSize(50);
-    text("risposta3", width/10, (height/8)*6, (width/10)*4-10, (height/8));
+    if (pos4[2]==0) {
+      text(ans14[index4], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+    } else if (pos4[2]==1) {
+      text(ans24[index4], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+    } else if (pos4[2]==2) {
+      text(ans34[index4], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+    } else if (pos4[2]==3) {
+      text(ans44[index4], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+    }
+
     if (ans4==0) {
       fill(255);
     } else if (ans4==1) {
@@ -162,7 +171,15 @@ void draw() {
     rect(width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
     fill(0);
     textSize(50);
-    text("risposta4", width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+    if (pos4[3]==0) {
+      text(ans14[index4], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+    } else if (pos4[3]==1) {
+      text(ans24[index4], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+    } else if (pos4[3]==2) {
+      text(ans34[index4], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+    } else if (pos4[3]==3) {
+      text(ans44[index4], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+    }
     if (ans1==0) {
       fill(255);
     } else if (ans1==1) {
@@ -173,7 +190,15 @@ void draw() {
     rect(width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
     fill(0);
     textSize(50);
-    text("risposta1", width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    if (pos4[0]==0) {
+      text(ans14[index4], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    } else if (pos4[0]==1) {
+      text(ans24[index4], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    } else if (pos4[0]==2) {
+      text(ans34[index4], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    } else if (pos4[0]==3) {
+      text(ans44[index4], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    }
     if (ans2==0) {
       fill(255);
     } else if (ans2==1) {
@@ -184,7 +209,15 @@ void draw() {
     rect(width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
     fill(0);
     textSize(50);
-    text("risposta2", width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    if (pos4[1]==0) {
+      text(ans14[index4], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    } else if (pos4[1]==1) {
+      text(ans24[index4], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    } else if (pos4[1]==2) {
+      text(ans34[index4], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    } else if (pos4[1]==3) {
+      text(ans44[index4], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    }
     //background(0,255,0);
   } else if (screen==2) {
     if (end) {
@@ -209,7 +242,6 @@ void draw() {
       }
     }
   }
-  println(screen);
 }
 
 void shuffle(int [] in) {
@@ -237,13 +269,15 @@ void keyPressed() {
     if (screen==0) {
       ans1=0;
       ans2=0;
+      index2=(int)random(domanda2.length);
+      shuffle(pos2);
     } else if (screen==1) {
       ans1=0;
       ans2=0;
       ans3=0;
       ans4=0;
-      index2=(int)random(domanda2.length);
-      shuffle(pos2);
+      index4=(int)random(domanda4.length);
+      shuffle(pos4);
     } else if (screen==2) {
       start=false;
       end=false;
@@ -251,13 +285,23 @@ void keyPressed() {
     }
   } else if (key=='d') {
     screen++;
-    start=false;
-    end=false;
-    tempo=45000;
-    ans1=0;
-    ans2=0;
-    ans3=0;
-    ans4=0;
+    if (screen==0) {
+      ans1=0;
+      ans2=0;
+      index2=(int)random(domanda2.length);
+      shuffle(pos2);
+    } else if (screen==1) {
+      ans1=0;
+      ans2=0;
+      ans3=0;
+      ans4=0;
+      index4=(int)random(domanda4.length);
+      shuffle(pos4);
+    } else if (screen==2) {
+      start=false;
+      end=false;
+      tempo=45000;
+    }
     if (screen>2) {
       screen=0;
     }
@@ -270,12 +314,48 @@ void keyPressed() {
       time0=millis();
     }
   } else if (key=='z') {
-    ans1++;
+    if (screen==0) {
+      if (pos2[0]==0) {
+        ans1=2;
+      } else {
+        ans1=1;
+      }
+    } else if (screen==1) {
+      if (pos4[0]==0) {
+        ans1=2;
+      } else {
+        ans1=1;
+      }
+    }
   } else if (key=='x') {
-    ans2++;
+    if (screen==0) {
+      if (pos2[1]==0) {
+        ans2=2;
+      } else {
+        ans2=1;
+      }
+    } else if (screen==1) {
+      if (pos4[1]==0) {
+        ans2=2;
+      } else {
+        ans2=1;
+      }
+    }
   } else if (key=='c') {
-    ans3++;
+    if (screen==1) {
+      if (pos4[2]==0) {
+        ans3=2;
+      } else {
+        ans3=1;
+      }
+    }
   } else if (key=='v') {
-    ans4++;
+    if (screen==1) {
+      if (pos4[3]==0) {
+        ans4=2;
+      } else {
+        ans4=1;
+      }
+    }
   }
 }
