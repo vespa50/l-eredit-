@@ -1,4 +1,4 @@
-import java.io.FileReader;
+import java.io.FileReader; //<>//
 import java.io.IOException;
 import java.io.FileNotFoundException;
 
@@ -21,7 +21,7 @@ String [] domanda2={};
 String [] ans12={};
 String [] ans22={};
 int index2=0;
-int []pos2={0,1};
+int []pos2={0, 1};
 
 String [] domanda4={};
 String [] ans14={};
@@ -29,12 +29,12 @@ String [] ans24={};
 String [] ans34={};
 String [] ans44={};
 int index4=0;
-int []pos4={0,1,2,3};
+int []pos4={0, 1, 2, 3};
 
 
 void setup() {
   //fullScreen();
-  size(400,400); //<>//
+  size(400, 400);
   background(255);
 
   target =new File(obbiettivo_add2);
@@ -55,14 +55,14 @@ void setup() {
       exit();
     }
     if (line!=null) {
-      String [] temp=split(line,'|');
-      domanda2=concat(domanda2,subset(temp,0,1));
-      ans12=concat(ans12,subset(temp,1,1));
-      ans22=concat(ans22,subset(temp,2,1));
+      String [] temp=split(line, '|');
+      domanda2=concat(domanda2, subset(temp, 0, 1));
+      ans12=concat(ans12, subset(temp, 1, 1));
+      ans22=concat(ans22, subset(temp, 2, 1));
     }
   } while (line!=null);
-  
-  
+
+
   target =new File(obbiettivo_add4);
   try {
     reader=new BufferedReader(new FileReader(target));
@@ -81,15 +81,14 @@ void setup() {
       exit();
     }
     if (line!=null) {
-      String [] temp=split(line,'|');
-      domanda4=concat(domanda2,subset(temp,0,1));
-      ans14=concat(ans12,subset(temp,1,1));
-      ans24=concat(ans22,subset(temp,2,1));
-      ans34=concat(ans12,subset(temp,3,1));
-      ans44=concat(ans22,subset(temp,4,1));
+      String [] temp=split(line, '|');
+      domanda4=concat(domanda2, subset(temp, 0, 1));
+      ans14=concat(ans12, subset(temp, 1, 1));
+      ans24=concat(ans22, subset(temp, 2, 1));
+      ans34=concat(ans12, subset(temp, 3, 1));
+      ans44=concat(ans22, subset(temp, 4, 1));
     }
   } while (line!=null);
-  
 }
 
 void draw() {
@@ -101,7 +100,7 @@ void draw() {
     rect(width/10, height/8, (width/10)*8, height/2);
     fill(0);
     textSize(100);
-    text("domanda", width/10, height/8, (width/10)*8, height/2);
+    text(domanda2[index2], width/10, height/8, (width/10)*8, height/2);
     if (ans1==0) {
       fill(255);
     } else if (ans1==1) {
@@ -112,7 +111,11 @@ void draw() {
     rect(width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
     fill(0);
     textSize(50);
-    text("risposta1", width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    if (pos2[0]==0) {
+      text(ans12[index2], width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    } else if (pos2[0]==1) {
+      text(ans22[index2], width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    }
     if (ans2==0) {
       fill(255);
     } else if (ans2==1) {
@@ -122,7 +125,12 @@ void draw() {
     }
     rect(width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
     fill(0);
-    text("risposta2", width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    if (pos2[1]==0) {
+      text(ans12[index2], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    } else if (pos2[1]==1) {
+      text(ans22[index2], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    }
+    
     //background(255,0,0);
   } else if (screen==1) {
     background(255);
@@ -204,33 +212,42 @@ void draw() {
   println(screen);
 }
 
-void shuffle(int [] in){
+void shuffle(int [] in) {
   int a;
   int b;
   int temp;
-   for(int i=0;i<10;i++){
-     a=(int)random(in.length);
-     b=(int)random(in.length);
-     temp=in[a];
-     in[a]=in[b];
-     in[b]=temp;
-   }
+  for (int i=0; i<10; i++) {
+    a=(int)random(in.length);
+    b=(int)random(in.length);
+    temp=in[a];
+    in[a]=in[b];
+    in[b]=temp;
+  }
 }
-  
+
 
 void keyPressed() {
 
   if (key=='s') {
     screen--;
-    start=false;
-    end=false;
-    tempo=45000;
-    ans1=0;
-    ans2=0;
-    ans3=0;
-    ans4=0;
+
     if (screen<0) {
       screen=2;
+    }
+    if (screen==0) {
+      ans1=0;
+      ans2=0;
+    } else if (screen==1) {
+      ans1=0;
+      ans2=0;
+      ans3=0;
+      ans4=0;
+      index2=(int)random(domanda2.length);
+      shuffle(pos2);
+    } else if (screen==2) {
+      start=false;
+      end=false;
+      tempo=45000;
     }
   } else if (key=='d') {
     screen++;
@@ -261,6 +278,4 @@ void keyPressed() {
   } else if (key=='v') {
     ans4++;
   }
-  
-  
 }
