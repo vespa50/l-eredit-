@@ -1,0 +1,3 @@
+domanda1|r1g|r2s
+domanda2|r1g|r2s
+domanda3|r1g|r2s

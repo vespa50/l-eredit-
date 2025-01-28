@@ -1,0 +1,80 @@
+San Romano |F
+Monteverde |F
+Castelmarino |F
+Valverde |F
+Cerrito |F
+Roccatella |F
+Palagiano |F
+Caprile |F
+Lucia |F
+Baldacchino |F
+Gallarate |F
+San Luca |F
+Carpeneto |F
+Lucia |F
+Castelnuovo di Garfagnana |F
+Monteriggioni |F
+Serralunga d'Alba |F
+Pienza |F
+Borghetto |F
+Lago di Castel Gandolfo |F
+San Fiorentino |F
+Villa Rosa |F
+Castelverde |F
+Roccalonga |F
+Carpineto |F
+San Giorgio di Montagna |F
+Terra Vecchia |F
+Piano Grande |F
+Monteverde Alto |F
+Cortina di Fiori |F
+Alessandria del Sole |F
+Valmonte |F
+Serravalle di Bosco |F
+San Valentino d’Oro |F
+Fiorentino del Mare |F
+Marina di Palladio |F
+Casalbuono |F
+Santa Lucia delle Alpi |F
+San Michele del Vento |F
+Montefiore di Sole |F
+Civita di Bagnoregio |V
+Campiglia Marittima |V
+Cogne |V
+Voghera |V
+Scanno |V
+Genga |V
+Sovana |V
+Noli |V
+Bova |V
+Rocca Calascio |V
+Montalcino |V
+Brisighella |V
+Celle Ligure |V
+Montefioralle |V
+Bagnoregio |V
+Santo Stefano di Sessanio |V
+Castelmezzano |V
+Monte Sant'Angelo |V
+Apricale |V
+Pacentro |V
+Fivizzano |V
+Monteveglio |V
+Colle di Val d'Elsa |V
+Vitozza |V
+Alberobello |V
+Rocca Priora |V
+Tricarico |V
+Sant'Agata di Militello |V
+Cervo |V
+Gangi |V
+Ceresole Reale |V
+Rocca di Mezzo |V
+Civitella del Tronto |V
+Vignanello |V
+Castelnuovo di Garfagnana |V
+Monteriggioni |V
+Serralunga d'Alba |V
+Pienza |V
+Borghetto |V
+Lago di Castel Gandolfo |V
