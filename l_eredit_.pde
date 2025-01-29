@@ -214,7 +214,7 @@ void draw() {
     textAlign(CENTER, CENTER);
     textSize(80);
 
-    if ((crono1-(millis()-crono1_t0))<0|crono1==0) {
+    if (((crono1-(millis()-crono1_t0))<0&run_crono1)|crono1==0) {
       run_crono1=false;
       crono1=0;
       if(millis()%1000<500){
@@ -245,7 +245,7 @@ void draw() {
       }
     }
     fill(0);
-    if ((crono2-(millis()-crono2_t0))<0|crono2==0) {
+    if (((crono2-(millis()-crono2_t0))<0&run_crono2)|crono2==0) {
       run_crono2=false;
       crono2=0;
       if(millis()%1000<500){
@@ -284,7 +284,7 @@ void draw() {
     } else if (parole[indice_sfida1].length()<18&parole[indice_sfida1].length()>10) {
       textSize(100);
     } else {
-      textSize(65);
+      textSize(60);
     }
 
     if (!busy&run_crono1&((millis()-crono1_t0)/100)%15==0) {
@@ -357,7 +357,7 @@ void draw() {
     } else if (word.length()<18&word.length()>10) {
       textSize(100);
     } else {
-      textSize(65);
+      textSize(60);
     }
     if (run_crono2|alltrue(show2)) {
       text(word, width/2+20, height*5/8, width/2-40, height/3);
@@ -698,7 +698,7 @@ void keyPressed() {
         ans2=0;
       }
     } else if (screen==2) {
-      if (!run_crono2) {
+      if (!run_crono2&crono2>0) {
         if (run_crono1) {
           run_crono1=false;
           crono1=crono1-(millis()-crono1_t0);
@@ -731,7 +731,7 @@ void keyPressed() {
       }
     }
     if (screen==2) {
-      if (!run_crono1) {
+      if (!run_crono1&crono1>0) {
         if (run_crono2) {
           run_crono2=false;
           crono2=crono2-(millis()-crono2_t0);
