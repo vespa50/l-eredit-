@@ -3,28 +3,28 @@ Felicità | Stato di contentezza e soddisfazione.
 Viaggio | Spostamento da un luogo a un altro.
 Libertà | Condizione di chi non è vincolato o limitato.
 Amore | Sentimento profondo di affetto e attaccamento.
-Natura | L'insieme degli elementi e fenomeni del mondo fisico.
+Natura | L insieme degli elementi e fenomeni del mondo fisico.
 Mistero | Qualcosa di oscuro e incomprensibile.
 Musica | Arte che utilizza suoni e silenzi per esprimere emozioni.
 Tempo | Concetto che indica la durata degli eventi.
 Sogno | Esperienza mentale che si svolge durante il sonno.
 Arte | Espressione creativa della propria visione del mondo.
 Pace | Condizione di serenità e assenza di conflitti.
-Inverno | La stagione più fredda dell'anno.
+Inverno | La stagione più fredda dell anno.
 Evoluzione | Processo di cambiamento graduale nel tempo.
 Tecnologia | Applicazione delle conoscenze scientifiche per risolvere problemi.
 Sole | La stella che fornisce luce e calore al nostro pianeta.
 Giustizia | Principio morale che determina ciò che è giusto o sbagliato.
 Speranza | Attesa fiduciosa di un futuro migliore.
-Cultura | L'insieme di conoscenze, credenze, e comportamenti di un gruppo.
+Cultura | L insieme di conoscenze, credenze, e comportamenti di un gruppo.
 Famiglia | Gruppo di persone legate da vincoli di parentela o affetto.
-Storia | Studio degli eventi passati dell'umanità.
+Storia | Studio degli eventi passati dell umanità.
 Spazio | Estensione illimitata in cui si trovano tutti gli oggetti.
 Futuro | Il periodo che viene dopo il presente.
 Libertà | Condizione di non essere sottoposti a costrizioni.
 Sostenibilità | Capacità di mantenere e conservare risorse senza esaurirle.
 Coraggio | Capacità di affrontare le difficoltà senza paura.
-Conoscenza | Insieme di informazioni apprese tramite lo studio e l’esperienza.
+Conoscenza | Insieme di informazioni apprese tramite lo studio e l esperienza.
 Resilienza | Capacità di adattarsi e superare situazioni difficili.
 Creatività | Facoltà di inventare cose nuove o originali.
 Bellezza | Qualità che suscita ammirazione o piacere estetico.
@@ -44,7 +44,7 @@ Verità | Conformità a ciò che è reale o accaduto.
 Riflessione | Pensiero profondo su un tema o situazione.
 Sfida | Compito che richiede impegno o coraggio per essere affrontato.
 Dialogo | Scambio di opinioni o idee tra due o più persone.
-Scienza | Conoscenza derivante dall’osservazione e dalla sperimentazione.
+Scienza | Conoscenza derivante dall osservazione e dalla sperimentazione.
 Poesia | Forma di espressione letteraria che usa il linguaggio in modo artistico.
 Futuro | Il tempo che verrà dopo il presente.
 Rispetto | Considerazione verso gli altri e le loro idee.
@@ -59,13 +59,13 @@ Tecnica | Metodo o abilità per fare qualcosa in modo efficace.
 Ricordo | Memoria di un evento passato.
 Felicità | Stato di benessere e appagamento.
 Equilibrio | Condizione di stabilità tra opposti o vari elementi.
-Risultato | Esito finale di un'azione o processo.
+Risultato | Esito finale di un azione o processo.
 Condivisione | Atto di distribuire qualcosa con gli altri.
 Pianeta | Corpo celeste che orbita attorno a una stella, come la Terra.
 Sostenibilità | Capacità di svilupparsi senza esaurire risorse naturali.
 Scelta | Atto di decidere tra due o più opzioni.
 Responsabilità | Dovere di rispondere delle proprie azioni o decisioni.
-Determinazione | Capacità di mantenere fermamente l’obiettivo, nonostante gli ostacoli.
+Determinazione | Capacità di mantenere fermamente l obiettivo, nonostante gli ostacoli.
 Indipendenza | Condizione di chi non dipende da altri, sia in ambito economico che decisionale.
 Sostenibilità | Capacità di svilupparsi senza compromettere le risorse naturali per le generazioni future.
 Intolleranza | Mancanza di rispetto verso le opinioni o le credenze di altre persone.
@@ -85,9 +85,9 @@ Raffinatezza | Qualità di essere elegante, sofisticato e di buon gusto.
 Indifferenza | Atteggiamento di chi non mostra interesse o preoccupazione per qualcosa.
 Autosufficienza | Capacità di provvedere da soli ai propri bisogni senza dipendere da altri.
 Transcendenza | Superamento dei limiti fisici e materiali, spesso legato a concetti spirituali.
-Partecipazione | Atto di prendere parte a un’attività o evento.
+Partecipazione | Atto di prendere parte a un attività o evento.
 Collaborazione | Lavoro in comune tra due o più persone per raggiungere un obiettivo.
-Sopravvivenza | L'atto di continuare a vivere o esistere nonostante le difficoltà o i pericoli.
+Sopravvivenza | L atto di continuare a vivere o esistere nonostante le difficoltà o i pericoli.
 Proattività | Attitudine a prendere iniziative, invece di reagire passivamente agli eventi.
 Estemporaneità | Caratteristica di qualcosa che è fatto senza preparazione o in modo improvvisato.
 Comunicazione | Processo attraverso il quale si trasmettono informazioni, emozioni e pensieri.
@@ -97,28 +97,28 @@ Consapevolezza | Capacità di essere coscienti di sé stessi e del proprio ambie
 Discrezionalità | Libertà di decidere o scegliere senza restrizioni fisse.
 Amministrazione | Gestione e organizzazione di risorse, attività o entità.
 Integrazione | Processo di combinare o unire parti diverse per formare un tutto armonioso.
-Sospensione | Interruzione temporanea di un’attività o di un’azione.
-Risolutezza | Determinazione nel prendere decisioni o nell’affrontare situazioni difficili.
-Riconciliazione | Processo di risoluzione dei conflitti per ripristinare la pace o l’armonia.
+Sospensione | Interruzione temporanea di un attività o di un azione.
+Risolutezza | Determinazione nel prendere decisioni o nell affrontare situazioni difficili.
+Riconciliazione | Processo di risoluzione dei conflitti per ripristinare la pace o l armonia.
 Immaginazione | Capacità di formare idee e concetti mentali non direttamente derivati dalla realtà.
 Affidabilità | Qualità di essere degni di fiducia e di agire in modo coerente.
 Incessante | Che non si ferma, che continua senza interruzione.
 Meraviglia | Sensazione di stupore e ammirazione di fronte a qualcosa di straordinario.
 Irreversibilità | Qualità di ciò che non può essere invertito o modificato una volta accaduto.
-Competenze | Abilità e conoscenze necessarie per svolgere un’attività in modo efficace.
+Competenze | Abilità e conoscenze necessarie per svolgere un attività in modo efficace.
 Ricostruzione | Atto di costruire nuovamente qualcosa che è stato distrutto o danneggiato.
 Perseveranza | Determinazione e costanza nel perseguire un obiettivo nonostante gli ostacoli.
 Trasformazione | Processo di cambiamento radicale, in un aspetto o nella natura di qualcosa.
 Competitività | Desiderio di ottenere un vantaggio sugli altri in un contesto di concorrenza.
 Sostenibilità | Capacità di un sistema o pratica di mantenersi senza esaurire risorse vitali.
-Riconciliazione | Atto di ripristinare l'armonia dopo un conflitto o una divisione.
+Riconciliazione | Atto di ripristinare l armonia dopo un conflitto o una divisione.
 Inaccessibilità | Caratteristica di essere difficile o impossibile da raggiungere o ottenere.
 Spontaneità | Tendenza a comportarsi in modo naturale e non pianificato.
 Meritocrazia | Sistema in cui i risultati o le posizioni sono determinati dal merito e dalle capacità.
 Imparzialità | Trattare tutti in modo equo, senza favoritismi o pregiudizi.
-Sopravvivenza | L’atto di rimanere in vita nonostante difficoltà o pericoli.
+Sopravvivenza | L atto di rimanere in vita nonostante difficoltà o pericoli.
 Benevolenza | Attitudine di chi è disposto ad agire con gentilezza e favore verso gli altri.
-Conseguenza | Risultato diretto di un’azione o di un comportamento.
+Conseguenza | Risultato diretto di un azione o di un comportamento.
 Esplorazione | Attività di ricerca e scoperta di luoghi, concetti o fenomeni sconosciuti.
 Autenticità | Caratteristica di essere genuino e vero, senza alterazioni o imitazioni.
 Trasparenza | Qualità di essere chiari e aperti, senza nascondere informazioni.
@@ -139,9 +139,9 @@ Autonomia | Capacità di prendere decisioni e agire in modo indipendente.
 Riconoscimento | Atto di apprezzare e premiare i meriti o i successi altrui.
 Consapevolezza | Conoscenza e comprensione del proprio stato o della propria situazione.
 Abnegazione | Atteggiamento di sacrificio e dedizione per il bene degli altri.
-Concentrazione | Attenzione intensa e focalizzata su un'attività o pensiero.
-Partecipazione | Atto di prendere parte a un’attività o a un processo collettivo.
-Rivalutazione | Revisione o riconsiderazione di una situazione o di un’opinione.
+Concentrazione | Attenzione intensa e focalizzata su un attività o pensiero.
+Partecipazione | Atto di prendere parte a un attività o a un processo collettivo.
+Rivalutazione | Revisione o riconsiderazione di una situazione o di un opinione.
 Sincerenità | Qualità di essere genuini e onesti, senza falsità.
 Solitudine | Stato di chi è da solo, sia volontariamente che per necessità.
 Produttività | Capacità di ottenere risultati in modo efficiente e con il minimo spreco.
@@ -156,7 +156,7 @@ Rivalità | Relazione tra persone o gruppi che competono per ottenere lo stesso 
 Previdenza | Capacità di pensare al futuro e agire di conseguenza per evitare problemi.
 Generosità | Atto di dare senza aspettarsi nulla in cambio.
 Trasformazione | Cambiamento radicale e completo di qualcosa o qualcuno.
-Convinzione | Fede o certezza in un’idea, opinione o causa.
+Convinzione | Fede o certezza in un idea, opinione o causa.
 Tolleranza | Disponibilità ad accettare le differenze e a rispettare opinioni o pratiche diverse.
 Coscienza | Conoscenza e consapevolezza delle proprie azioni, pensieri o dei diritti altrui.
 Sostenibilità | Capacità di mantenere un equilibrio che permetta di preservare le risorse naturali nel lungo periodo.
@@ -170,7 +170,7 @@ Affidabilità | Qualità di una persona o cosa che può essere considerata sicur
 Adrenalina | Sostanza chimica che viene prodotta dal corpo in risposta a situazioni stressanti o pericolose.
 Accoglienza | Atto di ricevere e trattare qualcuno in modo gentile e amichevole.
 Vulnerabilità | Condizione di essere esposti a danni, ferite o pericoli.
-Soggettività | La visione individuale o il punto di vista personale riguardo un tema o un’esperienza.
+Soggettività | La visione individuale o il punto di vista personale riguardo un tema o un esperienza.
 Fede | Credenza profonda in qualcosa senza bisogno di prove concrete.
 Forza | Potenza fisica o mentale per affrontare situazioni difficili.
 Luce | Energia che consente di vedere, proviene da fonti come il sole.
@@ -182,14 +182,14 @@ Fame | Sensazione di bisogno di cibo.
 Sogno | Esperienza mentale che si ha durante il sonno.
 Cuore | Organo che pompa il sangue nel corpo umano.
 Amore | Sentimento di affetto profondo verso qualcuno o qualcosa.
-Lacrima | Goccia di liquido che scende dall’occhio, di solito per tristezza.
+Lacrima | Goccia di liquido che scende dall occhio, di solito per tristezza.
 Piano | Progetto o schema che descrive come realizzare qualcosa.
 Spazio | Estensione illimitata dove si trovano gli oggetti.
 Idea | Pensiero o concetto che nasce nella mente.
 Mente | Facoltà di pensare e percepire il mondo.
-Fiume | Corso d’acqua che scorre verso il mare o un altro fiume.
+Fiume | Corso d acqua che scorre verso il mare o un altro fiume.
 Piede | Parte del corpo umano che permette di camminare e stare in piedi.
-Aria | Miscela di gas che compone l’atmosfera terrestre.
+Aria | Miscela di gas che compone l atmosfera terrestre.
 Raggio | Linea di luce o di forza che si irradia da un punto.
 Sole | Stella che illumina e riscalda la Terra.
 Alba | Momento in cui il sole sorge e inizia un nuovo giorno.
@@ -197,7 +197,7 @@ Cielo | La volta che sembra coprire la Terra, dove si trovano le nuvole e il sol
 Porto | Luogo dove le navi attraccano per caricare o scaricare merci.
 Fede | Fiducia e convinzione in un principio, credenza o divinità.
 Muro | Struttura solida che separa o sostiene un ambiente.
-Vento | Movimento dell’aria che può essere più o meno forte.
+Vento | Movimento dell aria che può essere più o meno forte.
 Fiori | Pianti che producono petali colorati e odori piacevoli.
 Rispetto | Considerazione verso gli altri, le loro idee e opinioni.
 Pace | Stato di tranquillità e assenza di guerre.
@@ -207,7 +207,7 @@ Sogno | Visita mentale e immaginativa durante il sonno.
 Sedia | Oggetto su cui si può sedere, generalmente con quattro gambe.
 Gioco | Attività ludica praticata per divertimento o educazione.
 Fumo | Vapori o gas che si sollevano da qualcosa di in fiamme.
-Oceano | Grande distesa d’acqua salata che copre gran parte della superficie terrestre.
+Oceano | Grande distesa d acqua salata che copre gran parte della superficie terrestre.
 Giro | Movimento rotatorio o percorso che si fa in cerchio.
 Muro | Struttura costruita per separare o proteggere uno spazio.
 Strada | Percorso asfaltato o naturale utilizzato per il transito di veicoli o pedoni.
@@ -220,11 +220,11 @@ Palla | Oggetto rotondo usato in molti sport.
 Vela | Tessuto che cattura il vento per spingere una barca o una nave.
 Sasso | Piccola pietra solida, che può essere utilizzata in vari modi.
 Ferro | Metallo pesante e resistente, usato in costruzioni e utensili.
-Vino | Bevanda alcolica ricavata dalla fermentazione dell’uva.
+Vino | Bevanda alcolica ricavata dalla fermentazione dell uva.
 Piano | Documento che delinea obiettivi e azioni per raggiungerli.
 Cane | Animale domestico noto per la sua fedeltà e compagnia.
 Gatto | Animale domestico, noto per la sua agilità e indipendenza.
-Gioco | Attività che stimola l’immaginazione, spesso con regole o obiettivi.
+Gioco | Attività che stimola l immaginazione, spesso con regole o obiettivi.
 Fango | Terra umida e vischiosa, formata dalla combinazione di acqua e polvere.
 Luce | Energia visibile che rende possibile la visione.
 Fiore | Parte di una pianta che produce semi e spesso ha colori vivaci.
@@ -239,53 +239,53 @@ Filosoficamente | In modo relativo alla filosofia, che riguarda la riflessione a
 Elettromagnetismo | Fenomeno fisico che unisce i campi elettrici e magnetici, descrivendo la loro interazione.
 Ossimoro | Figura retorica che unisce due termini di significato opposto, creando una contraddizione apparente.
 Disassociazione | Separazione o distacco di idee, emozioni o identità.
-Metempsicosi | Dottrina della trasmigrazione dell’anima da un corpo all'altro dopo la morte.
+Metempsicosi | Dottrina della trasmigrazione dell anima da un corpo all altro dopo la morte.
 Idiosincrasia | Caratteristica particolare di una persona o di un gruppo, che li distingue dagli altri.
-Antropocentrismo | Visione del mondo che considera l’essere umano come il centro di tutte le cose.
+Antropocentrismo | Visione del mondo che considera l essere umano come il centro di tutte le cose.
 Intransigente | Persona che non è disposta a fare concessioni o a scendere a compromessi.
 Olocausto | Periodo storico in cui milioni di persone, principalmente ebrei, furono uccise durante la Seconda Guerra Mondiale.
 Epistemologia | Studio della natura, delle origini e dei limiti della conoscenza umana.
 Antropomorfismo | Attribuzione di caratteristiche umane a esseri non umani, come animali o divinità.
-Epigenetica | Studio delle modificazioni ereditabili nell’espressione dei geni che non alterano il DNA.
+Epigenetica | Studio delle modificazioni ereditabili nell espressione dei geni che non alterano il DNA.
 Disfunzionalità | Condizione di un sistema o processo che non funziona correttamente.
 Pluridisciplinarità | Approccio che coinvolge diverse discipline o aree di studio per affrontare un problema complesso.
 Autocoscienza | Capacità di essere consapevoli di se stessi, dei propri pensieri, sentimenti e azioni.
 Fenomenologia | Studio delle esperienze soggettive e dei fenomeni come sono percepiti dalla coscienza.
 Ricombinazione | Processo mediante il quale gli elementi genetici si mescolano per formare nuove combinazioni.
-Microbiota | Insieme di microrganismi che vivono nel nostro corpo, particolarmente nell’intestino.
-Sociobiologia | Studio dell’influenza dei fattori biologici sui comportamenti sociali degli esseri viventi.
+Microbiota | Insieme di microrganismi che vivono nel nostro corpo, particolarmente nell intestino.
+Sociobiologia | Studio dell influenza dei fattori biologici sui comportamenti sociali degli esseri viventi.
 Transdisciplinarietà | Approccio che va oltre le singole discipline per affrontare questioni complesse in modo integrato.
 Ipertrofia | Crescita eccessiva o anomala di un organo o tessuto.
 Cacofonia | Un insieme di suoni dissonanti o sgradevoli, spesso usato in senso figurato per indicare confusione.
-Biocompatibilità | Capacità di un materiale di coesistere senza causare danni all’organismo.
+Biocompatibilità | Capacità di un materiale di coesistere senza causare danni all organismo.
 Pseudoscienza | Sistema di conoscenze o pratiche che si presentano come scientifiche ma non lo sono.
 Determinismo | Teoria secondo cui ogni evento è determinato da cause antecedenti, negando il libero arbitrio.
-Neoliberalismo | Ideologia politica ed economica che promuove il libero mercato e la riduzione dell’intervento statale.
+Neoliberalismo | Ideologia politica ed economica che promuove il libero mercato e la riduzione dell intervento statale.
 Frattalità | Proprietà di una struttura che si ripete su scala sempre più piccola, simile a se stessa.
 Ineluttabilità | Condizione di ciò che non può essere evitato o cambiato, inevitabile.
-Metafisica | Rama della filosofia che studia la natura fondamentale della realtà, al di là dell’esperienza sensoriale.
+Metafisica | Rama della filosofia che studia la natura fondamentale della realtà, al di là dell esperienza sensoriale.
 Archetipico | Relativo a un archetipo, un modello originale che rappresenta una categoria universale.
-Transumanesimo | Movimento che promuove l’uso delle tecnologie per migliorare le capacità umane, fisiche e mentali.
+Transumanesimo | Movimento che promuove l uso delle tecnologie per migliorare le capacità umane, fisiche e mentali.
 Panpsichismo | Teoria filosofica secondo cui la coscienza è una proprietà universale di tutta la materia.
 Obsolescenza | Condizione di qualcosa che diventa inutilizzabile a causa del progresso tecnologico o della moda.
 Catastrofismo | Teoria che prevede grandi disastri futuri come inevitabili.
-Neuroplasticità | Capacità del cervello di adattarsi e cambiare attraverso l’esperienza e l’apprendimento.
+Neuroplasticità | Capacità del cervello di adattarsi e cambiare attraverso l esperienza e l apprendimento.
 Interconnessione | Relazione tra elementi diversi che sono legati tra loro in un sistema complesso.
-Psicoanalisi | Teoria e metodo terapeutico sviluppato da Freud per comprendere l’inconscio.
+Psicoanalisi | Teoria e metodo terapeutico sviluppato da Freud per comprendere l inconscio.
 Entropia | Misura del disordine o della casualità di un sistema, spesso utilizzata in termodinamica.
-Antropocentrismo | Visione del mondo che considera l’essere umano come l’entità centrale dell’universo.
+Antropocentrismo | Visione del mondo che considera l essere umano come l entità centrale dell universo.
 Bioetica | Disciplina che studia le implicazioni etiche delle scienze biologiche e mediche.
-Empatia | Capacità di comprendere e condividere i sentimenti di un'altra persona.
+Empatia | Capacità di comprendere e condividere i sentimenti di un altra persona.
 Equilibrio | Stato di armonia e stabilità, sia fisica che psicologica.
 Conflitto | Disaccordo o lotta tra due o più parti, che può essere fisico o ideologico.
 Simpatia | Sentimento di affetto e comprensione verso qualcuno.
 Resilienza | Capacità di affrontare e superare difficoltà o traumi.
 Dinamica | Studio dei movimenti e delle forze che agiscono su un corpo o sistema.
 Sostenibilità | Capacità di mantenere un equilibrio senza esaurire risorse per le generazioni future.
-Concentrazione | Atto di focalizzarsi intensamente su un'attività o pensiero.
+Concentrazione | Atto di focalizzarsi intensamente su un attività o pensiero.
 Innovazione | Introduzione di nuove idee, metodi o tecnologie in un campo specifico.
 Accettazione | Atteggiamento di apertura e tolleranza verso qualcosa o qualcuno.
-Progressione | Sviluppo o avanzamento di un processo, di una persona o di un’idea.
+Progressione | Sviluppo o avanzamento di un processo, di una persona o di un idea.
 Integrazione | Processo di unione o inclusione di elementi diversi in un tutto armonioso.
 Riflessione | Pensiero profondo e meditato su un argomento o esperienza.
 Curiosità | Desiderio di conoscere e comprendere il mondo circostante.
