@@ -287,7 +287,7 @@ void draw() {
       textSize(60);
     }
 
-    if (!busy&run_crono1&((millis()-crono1_t0)/100)%15==0) {
+    if (!busy&run_crono1&((millis()-crono1_t0)/100)%25==0) {
       busy=true;
       int lettere=0;
       for (int i=0; i<show1.length; i++) {
@@ -303,7 +303,7 @@ void draw() {
       }
     }
 
-    if (busy&run_crono1&((millis()-crono1_t0)/100)%15!=0) {
+    if (busy&run_crono1&((millis()-crono1_t0)/100)%25!=0) {
       busy=false;
     }
 
@@ -320,6 +320,8 @@ void draw() {
       text(word, 20, height*5/8, width/2-40, height/3);
       textSize(50);
       text(definizione[indice_sfida1]+"  "+indice_sfida1, 20, height/3, width/2-40, height/3);
+    }else{
+      text(indice_sfida1+"", 20, height/3, width/2-40, height/3);
     }
 
 
@@ -363,6 +365,8 @@ void draw() {
       text(word, width/2+20, height*5/8, width/2-40, height/3);
       textSize(50);
       text(definizione[indice_sfida2]+"  "+indice_sfida2, width/2+20, height/3, width/2-40, height/3);
+    }else{
+      text(indice_sfida2+"",  width/2+20, height/3, width/2-40, height/3);
     }
   }
 }
@@ -708,9 +712,9 @@ void keyPressed() {
         } else {
           crono1_t0=millis();
           run_crono1=true;
-          indice_sfida1=(int)random(parole.length);
-          show1=new boolean[parole[indice_sfida1].length()];
-          show1[0]=true;
+          indice_sfida2=(int)random(parole.length);
+          show2=new boolean[parole[indice_sfida2].length()];
+          show2[0]=true;
         }
       }
     }
@@ -741,9 +745,9 @@ void keyPressed() {
         } else {
           crono2_t0=millis();
           run_crono2=true;
-          indice_sfida2=(int)random(parole.length);
-          show2=new boolean[parole[indice_sfida2].length()];
-          show2[0]=true;
+          indice_sfida1=(int)random(parole.length);
+          show1=new boolean[parole[indice_sfida1].length()];
+          show1[0]=true;
         }
       }
     }
