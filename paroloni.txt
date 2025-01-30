@@ -1,18 +1,7 @@
-disamina|Esame attento|Uno Spuntino frugale|Un campo sminato|Un uomo senza un braccio|Un nemico|Un compito poco gradevole|Un composto medicinale8
-
-imbolsire [im-bol-sì-re] v.
-detto di un cavallo, diventare bolso;
-in senso figurato, di persona, ingrassare in modo malsano
-
-prodromo [prò-dro-mo] s.m.
-Segno, indizio, circostanza che preannuncia qualcosa, generalmente sfavorevole.
-es. i prodromi di una malattia, di una crisi economica
-
-Segaligno [se-ga-lì-gno] agg.
--magro e asciutto, e per questo robusto e sano
-
-albagietta. Piccola boria, vanità (Z): il comando reciso ch’ella aveva assunto in casa e l’albagietta non mi garbavano un punto; ‒ p.38
-
-armilla. Bracciale per ornamento (Z): era stato specialmente incaricato delle armille  e delle collane che doveano fregiare la sposa. ‒ p.378
-
-barracane. Tessuto pesante (Z): e ciò erano una vestitina di barracana un bustino di dobletta con istecche di osso, ‒ p.175
+disamina|Un esame attento|Uno Spuntino frugale|Un campo sminato|Un uomo senza un braccio|Un nemico|Un compito poco gradevole|Un composto medicinale|Una bevanda alcoica
+imbolsire|Ingrassare in modo malsano|Tossire ripetutamente|Abbellire una stanza|Imbottire un divano|Perdere la vista|Svenire improvvisamente|Imbastire un abito|Sparire
+prodromo|Un sintomo di una malattia|Una deformità fisica|Il protrarsi di un impegno|Un particolare stadio|Evento che porta beneficio|Bastone da passeggio|Istituzione politica|Un protettore
+segaligno|Una persona sana e robusta|Un falegname|Un mobile in legno|Un luogo di ritrovo|Una persona tirchia|Un antico trattato|Un pane di segale|Un metodo di tortura
+albagietta|Una piccola vanità|Una parte di una barca|Una persona matutina|Un soprammobile|Una piccola spiaggia|Una piccola spilla|Un servitore di corte|Un puntaspilli
+armilla|Un bracciale ornamentale|Una divinità romana|Un minerale Una guardia scelta|Un rapace|Una persona melliflua|Un tipo di abito da sera|Un tipo di spada
+barracane|Un tessuto pesante|Un ostacolo naturale|Un canile|Un lupo mannaro|Un edificio pericolante|Un liquore barricato|Una razza canina|Una disgrazia

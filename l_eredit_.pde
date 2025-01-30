@@ -3,10 +3,13 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.nio.charset.CharsetEncoder;
 import java.nio.charset.Charset;
+import processing.sound.*;
+
+SoundFile sigla;
+SoundFile tempo;
+SoundFile doppio;
 
 int screen=0;
-long time0=0;
-long tempo=45000;
 boolean start=false;
 boolean end=false;
 int ans1=0;
@@ -75,10 +78,21 @@ int data_index=0;
 int data_anno=0;
 int []data_pos={0, 1, 2, 3};
 
+int triello_index=0;
+String[] triello_domanda={};
+String[] triello_rispostaV={};
+String[] triello_risposta1={};
+String[] triello_risposta2={};
+String[] triello_risposta3={};
+
 void setup() {
   fullScreen();
   //size(400, 400);
   background(255);
+
+  sigla = new SoundFile(this, "Sigla_iniziale.mp3");
+  tempo= new SoundFile(this, "Tempo_scaduto.mp3");
+  doppio= new SoundFile(this, "Doppio_errore.mp3");
 
   attoriF=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, false);
   attoriV=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, true);
@@ -102,10 +116,46 @@ void setup() {
   data_1995=load_data("C:\\Users\\trava\\Desktop\\l_eredit_\\1995.txt", data_1995);
   data_2000=load_data("C:\\Users\\trava\\Desktop\\l_eredit_\\2000.txt", data_2000);
 
-  println(attoriV.length);
-  println(attoriF.length);
-  println(comuniV.length);
-  println(comuniF.length);
+  triello_domanda=concat_string(triello_domanda, "Quale è stato il primo trapianto di questo tipo eseguito il 23 dicembre 1954 all'ospedale di Peter Bent Brigham di Boston, negli Stati Uniti, da un team di chirurghi guidato da Joseph Murray?");
+  triello_domanda=concat_string(triello_domanda, "Quale delle seguenti aziende automobilistiche ha prodotto più veicoli nel 2023 (10.5mln)?");
+  triello_domanda=concat_string(triello_domanda, "Da quale videogioco è tratta la frase \"Ah shit, here we go again\", utilizzata poi successivamente per la creazione di innumerevoli meme?");
+  triello_domanda=concat_string(triello_domanda, "Nel opera letteraria \"I Promessi Sposi\", scritta da Alessandro Manzonie pubblicata per la prima volta nel 1827, di quanti capitoli era composta la prima edizione?");
+  triello_domanda=concat_string(triello_domanda, "All' interno delle monarchie europee, quale fu il nome più utilizzato dai sovrani?");
+  triello_domanda=concat_string(triello_domanda, "Quale dei seguenti non è il nome dato ad un uragano che ha colpito gli Stati Uniti d'America?");
+  triello_domanda=concat_string(triello_domanda, "Quale delle seguenti nazioni ha ottenuto più medagie olimpiche nella storia dei giochi moderni con un totale di 2543?");
+
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "");
+
+  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "");
+
+  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "");
+
+  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "");
+
   target =new File(obbiettivo_add2);
   try {
     reader=new BufferedReader(new FileReader(target));
@@ -169,6 +219,9 @@ void draw() {
     fill(0);
     textSize(200);
     text("L'EREDITA'", width/2, height/2);
+    if (!sigla.isPlaying()) {
+      sigla.loop();
+    }
   } else if (screen==1) {// ce o non ce
     background(255);
     textAlign(CENTER, CENTER);
@@ -227,7 +280,7 @@ void draw() {
     rect(width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
     fill(0);
     text("non c'è", width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
-  } else if (screen==2|screen==4|screen==6) {
+  } else if (screen==2|screen==4|screen==6|screen==8) {
     background(255);
     stroke(0);
     line(width/2, 0, width/2, height);
@@ -238,6 +291,9 @@ void draw() {
     if (((crono1-(millis()-crono1_t0))<0&run_crono1)|crono1==0) {
       run_crono1=false;
       crono1=0;
+      if (!tempo.isPlaying()) {
+        tempo.loop();
+      }
       if (millis()%1000<500) {
         noFill();
         stroke(0);
@@ -269,6 +325,9 @@ void draw() {
     if (((crono2-(millis()-crono2_t0))<0&run_crono2)|crono2==0) {
       run_crono2=false;
       crono2=0;
+      if (!tempo.isPlaying()) {
+        tempo.loop();
+      }
       if (millis()%1000<500) {
         noFill();
         stroke(0);
@@ -504,6 +563,36 @@ void draw() {
     fill(0);
     textSize(70);
     text("1987", width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+  } else if (screen==7) {
+    background(255);
+    textAlign(CENTER, CENTER);
+    stroke(0);
+    fill(0);
+    textSize(200);
+    text("PAROLONI", width/2, height/2);
+  } else if (screen==9) {
+    if (triello_index==0) {
+      background(255);
+      fill(255);
+      rect(width/4-width/10, height/6-height/12, width/5, height/6);
+      rect(width*3/4-width/10, height/6-height/12, width/5, height/6);
+      rect(width/4-width/10, height*5/6-height/12, width/5, height/6);
+      rect(width*3/4-width/10, height*5/6-height/12, width/5, height/6);
+      rect(width/6-width/10, height*3/6-height/12, width/5, height/6);
+      rect(width*3/6-width/10, height*3/6-height/12, width/5, height/6);
+      rect(width*5/6-width/10, height*3/6-height/12, width/5, height/6);
+      fill(0);
+      textAlign(CENTER, CENTER);
+      textSize(60);
+      text("medicina", width/4-width/10, height/6-height/12, width/5, height/6);
+      text("industria", width*3/4-width/10, height/6-height/12, width/5, height/6);
+      text("meme", width/4-width/10, height*5/6-height/12, width/5, height/6);
+      text("letteratura", width*3/4-width/10, height*5/6-height/12, width/5, height/6);
+      text("storia", width/6-width/10, height*3/6-height/12, width/5, height/6);
+      text("meteorologia", width*3/6-width/10, height*3/6-height/12, width/5, height/6);
+      text("sport", width*5/6-width/10, height*3/6-height/12, width/5, height/6);
+    } else if (triello_index>=1) {
+    }
   }
 }
 
@@ -531,7 +620,6 @@ String[] load_data(String file, String[] data) {
   do {
     try {
       line=reader.readLine();
-      println(line);
     }
     catch(IOException e) {
       println("ioexception file");
@@ -663,6 +751,12 @@ String[] concat_string(String[] ar, String val) {
 }
 
 void init() {
+  if (sigla.isPlaying()) {
+    sigla.stop();
+  }
+  if (tempo.isPlaying()) {
+    tempo.stop();
+  }
   if (screen==1) {
     ans1=0;
     ans2=0;
@@ -685,7 +779,7 @@ void init() {
       F_cenonce=libriF;
       break;
     }
-  } else if (screen==2|screen==4|screen==6) {
+  } else if (screen==2|screen==4|screen==6|screen==8) {
     run_crono1=false;
     run_crono2=false;
     crono1=45000;
@@ -717,6 +811,7 @@ void init() {
     } else if (data_anno==3) {
       data_index=(int)random(data_2000.length);
     }
+  } else if (screen==7) {
   }
 }
 
@@ -848,28 +943,6 @@ void drawn() {
       text(ans44[index4], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
     }
     //background(0,255,0);
-  } else if (screen==2|screen==4|screen==6) {
-    if (end) {
-      if (millis()%1000<500) {
-        background(255);
-      } else {
-        background(255, 0, 0);
-      }
-    } else {
-      background(255);
-    }
-    textAlign(CENTER, CENTER);
-    fill(0);
-    textSize(250);
-    text(tempo/1000+"."+tempo%1000, width/2, height/2);
-    if (start) {
-      tempo=45000-(millis()-time0);
-      if (tempo<=0) {
-        start=false;
-        tempo=0;
-        end=true;
-      }
-    }
   }
 }
 
@@ -888,17 +961,17 @@ void shuffle(int [] in) {
 
 
 void keyPressed() {
-
+  println(key);
   if (key=='s') {
     screen--;
     if (screen<0) {
-      screen=6;
+      screen=9;
     }
     init();
   } else if (key=='d') {
     screen++;
     init();
-    if (screen>6) {
+    if (screen>9) {
       screen=0;
     }
   } else if (key=='a') {
@@ -948,7 +1021,7 @@ void keyPressed() {
         ans1=3;
         ans2=0;
       }
-    } else if (screen==2|screen==4|screen==6) {
+    } else if (screen==2|screen==4|screen==6|screen==8) {
       if (!run_crono2&crono2>0) {
         if (run_crono1) {
           run_crono1=false;
@@ -1115,5 +1188,7 @@ void keyPressed() {
         }
       }
     }
+  } else if (key=='y') {
+    doppio.play();
   }
 }
