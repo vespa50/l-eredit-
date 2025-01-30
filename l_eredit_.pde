@@ -47,8 +47,6 @@ String [] V_cenonce={};
 String [] F_cenonce={};
 boolean risposta=false;
 
-
-
 String [] parole={};
 String [] definizione={};
 int indice_sfida1=0;
@@ -62,6 +60,20 @@ boolean run_crono2=false;
 boolean [] show1={};
 boolean [] show2={};
 boolean busy=false;
+
+String[] chicomecosa_domande={};
+String[] chicomecosa_rispV={};
+String[] chicomecosa_rispF={};
+int chicomecosa_index=0;
+int [] chicomecosa_pos={0, 1};
+
+String [] data_1971={};
+String [] data_1987={};
+String [] data_1995={};
+String [] data_2000={};
+int data_index=0;
+int data_anno=0;
+int []data_pos={0, 1, 2, 3};
 
 void setup() {
   fullScreen();
@@ -80,6 +92,15 @@ void setup() {
   definizione=load_sfida("C:\\Users\\trava\\Desktop\\l_eredit_\\sfida.txt", definizione, parole, true);
   parole=load_sfida("C:\\Users\\trava\\Desktop\\l_eredit_\\sfida.txt", definizione, parole, false);
 
+
+  chicomecosa_domande=load_chicomecosa("C:\\Users\\trava\\Desktop\\l_eredit_\\chi_come_cosa.txt", chicomecosa_domande, chicomecosa_rispV, chicomecosa_rispF, 0);
+  chicomecosa_rispV=load_chicomecosa("C:\\Users\\trava\\Desktop\\l_eredit_\\chi_come_cosa.txt", chicomecosa_domande, chicomecosa_rispV, chicomecosa_rispF, 1);
+  chicomecosa_rispF=load_chicomecosa("C:\\Users\\trava\\Desktop\\l_eredit_\\chi_come_cosa.txt", chicomecosa_domande, chicomecosa_rispV, chicomecosa_rispF, 2);
+
+  data_1971=load_data("C:\\Users\\trava\\Desktop\\l_eredit_\\1971.txt", data_1971);
+  data_1987=load_data("C:\\Users\\trava\\Desktop\\l_eredit_\\1987.txt", data_1987);
+  data_1995=load_data("C:\\Users\\trava\\Desktop\\l_eredit_\\1995.txt", data_1995);
+  data_2000=load_data("C:\\Users\\trava\\Desktop\\l_eredit_\\2000.txt", data_2000);
 
   println(attoriV.length);
   println(attoriF.length);
@@ -206,7 +227,7 @@ void draw() {
     rect(width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
     fill(0);
     text("non c'è", width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
-  } else if (screen==2) {
+  } else if (screen==2|screen==4|screen==6) {
     background(255);
     stroke(0);
     line(width/2, 0, width/2, height);
@@ -217,25 +238,25 @@ void draw() {
     if (((crono1-(millis()-crono1_t0))<0&run_crono1)|crono1==0) {
       run_crono1=false;
       crono1=0;
-      if(millis()%1000<500){
+      if (millis()%1000<500) {
         noFill();
         stroke(0);
-        rect(width/4-120,height/4-50,240,100);
-        fill(255,0,0);
-        rect(width/4-120,height/4-50,240,100);
+        rect(width/4-120, height/4-50, 240, 100);
+        fill(255, 0, 0);
+        rect(width/4-120, height/4-50, 240, 100);
         fill(0);
         text("00.000", width/4, height/4);
-      }else{
+      } else {
         noFill();
         stroke(0);
-        rect(width/4-120,height/4-50,240,100);
+        rect(width/4-120, height/4-50, 240, 100);
         fill(0);
-        rect(width/4-120,height/4-50,240,100);
-        fill(255,0,0);
+        rect(width/4-120, height/4-50, 240, 100);
+        fill(255, 0, 0);
         text("00.000", width/4, height/4);
       }
-      for(int i=0;i<show1.length;i++){
-         show1[i]=true; 
+      for (int i=0; i<show1.length; i++) {
+        show1[i]=true;
       }
     } else {
       if (run_crono1) {
@@ -248,25 +269,25 @@ void draw() {
     if (((crono2-(millis()-crono2_t0))<0&run_crono2)|crono2==0) {
       run_crono2=false;
       crono2=0;
-      if(millis()%1000<500){
+      if (millis()%1000<500) {
         noFill();
         stroke(0);
-        rect(width*3/4-120,height/4-50,240,100);
-        fill(255,0,0);
-        rect(width*3/4-120,height/4-50,240,100);
+        rect(width*3/4-120, height/4-50, 240, 100);
+        fill(255, 0, 0);
+        rect(width*3/4-120, height/4-50, 240, 100);
         fill(0);
         text("00.000", width*3/4, height/4);
-      }else{
+      } else {
         noFill();
         stroke(0);
-        rect(width*3/4-120,height/4-50,240,100);
+        rect(width*3/4-120, height/4-50, 240, 100);
         fill(0);
-        rect(width*3/4-120,height/4-50,240,100);
-        fill(255,0,0);
+        rect(width*3/4-120, height/4-50, 240, 100);
+        fill(255, 0, 0);
         text("00.000", width*3/4, height/4);
       }
-      for(int i=0;i<show2.length;i++){
-         show2[i]=true; 
+      for (int i=0; i<show2.length; i++) {
+        show2[i]=true;
       }
     } else {
       if (run_crono2) {
@@ -320,7 +341,7 @@ void draw() {
       text(word, 20, height*5/8, width/2-40, height/3);
       textSize(50);
       text(definizione[indice_sfida1]+"  "+indice_sfida1, 20, height/3, width/2-40, height/3);
-    }else{
+    } else {
       text(indice_sfida1+"", 20, height/3, width/2-40, height/3);
     }
 
@@ -365,9 +386,124 @@ void draw() {
       text(word, width/2+20, height*5/8, width/2-40, height/3);
       textSize(50);
       text(definizione[indice_sfida2]+"  "+indice_sfida2, width/2+20, height/3, width/2-40, height/3);
-    }else{
-      text(indice_sfida2+"",  width/2+20, height/3, width/2-40, height/3);
+    } else {
+      text(indice_sfida2+"", width/2+20, height/3, width/2-40, height/3);
     }
+  } else if (screen==3) {
+    background(255);
+    textAlign(CENTER, CENTER);
+    stroke(0);
+    fill(255);
+    rect(width/10, height/8, (width/10)*8, height/2);
+    fill(0);
+    textSize(100);
+    text(chicomecosa_domande[chicomecosa_index], width/10, height/8, (width/10)*8, height/2);
+    if (ans1==0) {
+      fill(255);
+    } else if (ans1==1) {
+      fill(255, 0, 0);
+    } else if (ans1==2) {
+      fill(0, 255, 0);
+    } else if (ans1==3) {
+      fill(255, 255, 0);
+    }
+    rect(width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    fill(0);
+    textSize(50);
+    if (chicomecosa_pos[0]==0) {
+      text(chicomecosa_rispV[chicomecosa_index], width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    } else if (chicomecosa_pos[0]==1) {
+      text(chicomecosa_rispF[chicomecosa_index], width/10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    }
+    if (ans2==0) {
+      fill(255);
+    } else if (ans2==1) {
+      fill(255, 0, 0);
+    } else if (ans2==2) {
+      fill(0, 255, 0);
+    } else if (ans2==3) {
+      fill(255, 255, 0);
+    }
+    rect(width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    fill(0);
+    if (chicomecosa_pos[1]==0) {
+      text(chicomecosa_rispV[chicomecosa_index], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    } else if (chicomecosa_pos[1]==1) {
+      text(chicomecosa_rispF[chicomecosa_index], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
+    }
+  } else if (screen==5) {
+    background(255);
+    textAlign(CENTER, CENTER);
+    stroke(0);
+    fill(255);
+    rect(width/10, height/8, (width/10)*8, height*0.4);
+    fill(0);
+    textSize(30);
+    if (data_anno==0) {
+      text(data_1971[data_index], width/10, height/8, (width/10)*8, height*0.4);
+    } else if (data_anno==1) {
+      text(data_1987[data_index], width/10, height/8, (width/10)*8, height*0.4);
+    } else if (data_anno==2) {
+      text(data_1995[data_index], width/10, height/8, (width/10)*8, height*0.4);
+    } else if (data_anno==3) {
+      text(data_2000[data_index], width/10, height/8, (width/10)*8, height*0.4);
+    }
+
+    if (ans3==0) {
+      fill(255);
+    } else if (ans3==1) {
+      fill(255, 0, 0);
+    } else if (ans3==2) {
+      fill(0, 255, 0);
+    } else if (ans3==3) {
+      fill(255, 255, 0);
+    }
+    rect(width/10, (height/8)*6, (width/10)*4-10, (height/8));
+    fill(0);
+    textSize(70);
+    text("1995", width/10, (height/8)*6, (width/10)*4-10, (height/8));
+
+    if (ans4==0) {
+      fill(255);
+    } else if (ans4==1) {
+      fill(255, 0, 0);
+    } else if (ans4==2) {
+      fill(0, 255, 0);
+    } else if (ans4==3) {
+      fill(255, 255, 0);
+    }
+    rect(width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+    fill(0);
+    textSize(70);
+    text("2000", width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+
+    if (ans1==0) {
+      fill(255);
+    } else if (ans1==1) {
+      fill(255, 0, 0);
+    } else if (ans1==2) {
+      fill(0, 255, 0);
+    } else if (ans1==3) {
+      fill(255, 255, 0);
+    }
+    rect(width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    fill(0);
+    textSize(70);
+    text("1971", width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+
+    if (ans2==0) {
+      fill(255);
+    } else if (ans2==1) {
+      fill(255, 0, 0);
+    } else if (ans2==2) {
+      fill(0, 255, 0);
+    } else if (ans2==3) {
+      fill(255, 255, 0);
+    }
+    rect(width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+    fill(0);
+    textSize(70);
+    text("1987", width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
   }
 }
 
@@ -380,6 +516,73 @@ boolean alltrue(boolean [] ar) {
   return true;
 }
 
+String[] load_data(String file, String[] data) {
+  File target =new File(file);
+  BufferedReader reader=null;
+  String line="";
+  try {
+    reader=new BufferedReader(new FileReader(target));
+  }
+  catch(FileNotFoundException e) {
+    println("file not found");
+    exit();
+  }
+
+  do {
+    try {
+      line=reader.readLine();
+      println(line);
+    }
+    catch(IOException e) {
+      println("ioexception file");
+      exit();
+    }
+    if (line!=null) {
+      data=concat_string(data, line);
+    }
+  } while (line!=null);
+  return data;
+}
+
+String[] load_chicomecosa(String file, String[] domanda, String[] elencoV, String[] elencoF, int out) {
+  File target =new File(file);
+  BufferedReader reader=null;
+  String line="";
+  try {
+    reader=new BufferedReader(new FileReader(target));
+  }
+  catch(FileNotFoundException e) {
+    println("file not found");
+    exit();
+  }
+
+  do {
+    try {
+      line=reader.readLine();
+      println(line);
+    }
+    catch(IOException e) {
+      println("ioexception file");
+      exit();
+    }
+    if (line!=null) {
+      String [] temp=split(line, '|');
+      domanda=concat_string(domanda, temp[0]);
+      elencoV=concat_string(elencoV, temp[1]);
+      elencoF=concat_string(elencoF, temp[2]);
+    }
+  } while (line!=null);
+
+  if (out==0) {
+    return domanda;
+  } else if (out==1) {
+    return elencoV;
+  } else if (out==2) {
+    return elencoF;
+  } else {
+    return domanda;
+  }
+}
 
 String[] load_cenonce(String file, String[] elencoV, String[] elencoF, boolean out) {
   File target =new File(file);
@@ -482,7 +685,7 @@ void init() {
       F_cenonce=libriF;
       break;
     }
-  } else if (screen==2) {
+  } else if (screen==2|screen==4|screen==6) {
     run_crono1=false;
     run_crono2=false;
     crono1=45000;
@@ -494,6 +697,26 @@ void init() {
     show1[0]=true;
     show2[0]=true;
     busy=false;
+  } else if (screen==3) {
+    chicomecosa_index=(int)random(chicomecosa_domande.length);
+    shuffle(chicomecosa_pos);
+    ans1=0;
+    ans2=0;
+  } else if (screen==5) {
+    data_anno=(int)random(4);
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    if (data_anno==0) {
+      data_index=(int)random(data_1971.length);
+    } else if (data_anno==1) {
+      data_index=(int)random(data_1987.length);
+    } else if (data_anno==2) {
+      data_index=(int)random(data_1995.length);
+    } else if (data_anno==3) {
+      data_index=(int)random(data_2000.length);
+    }
   }
 }
 
@@ -625,7 +848,7 @@ void drawn() {
       text(ans44[index4], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
     }
     //background(0,255,0);
-  } else if (screen==2) {
+  } else if (screen==2|screen==4|screen==6) {
     if (end) {
       if (millis()%1000<500) {
         background(255);
@@ -669,22 +892,46 @@ void keyPressed() {
   if (key=='s') {
     screen--;
     if (screen<0) {
-      screen=2;
+      screen=6;
     }
     init();
   } else if (key=='d') {
     screen++;
     init();
-    if (screen>2) {
+    if (screen>6) {
       screen=0;
     }
   } else if (key=='a') {
-    if (start) {
-      start=false;
-    } else {
-      start=true;
-      end=false;
-      time0=millis();
+    if (screen==5) {
+      if (ans1==3|ans2==3|ans3==3|ans4==3) {
+        if (ans1==3) {
+          ans1=0;
+        }
+        if (ans2==3) {
+          ans2=0;
+        }
+        if (ans3==3) {
+          ans3=0;
+        }
+        if (ans4==3) {
+          ans4=0;
+        }
+      } else {
+        data_anno=(int)random(4);
+        ans1=0;
+        ans2=0;
+        ans3=0;
+        ans4=0;
+        if (data_anno==0) {
+          data_index=(int)random(data_1971.length);
+        } else if (data_anno==1) {
+          data_index=(int)random(data_1987.length);
+        } else if (data_anno==2) {
+          data_index=(int)random(data_1995.length);
+        } else if (data_anno==3) {
+          data_index=(int)random(data_2000.length);
+        }
+      }
     }
   } else if (key=='z') {
     if (screen==1) {
@@ -701,7 +948,7 @@ void keyPressed() {
         ans1=3;
         ans2=0;
       }
-    } else if (screen==2) {
+    } else if (screen==2|screen==4|screen==6) {
       if (!run_crono2&crono2>0) {
         if (run_crono1) {
           run_crono1=false;
@@ -715,6 +962,37 @@ void keyPressed() {
           indice_sfida2=(int)random(parole.length);
           show2=new boolean[parole[indice_sfida2].length()];
           show2[0]=true;
+        }
+      }
+    } else if (screen==3) {
+      if (ans1==0&ans2==0) {
+        ans1=3;
+      } else if (ans1==3) {
+        if (chicomecosa_pos[0]==0) {
+          ans1=2;
+        } else {
+          ans1=1;
+          ans2=2;
+        }
+      } else if (ans1==0&ans2==3) {
+        ans1=3;
+        ans2=0;
+      }
+    } else if (screen==5) {
+      if (ans1==0&!(ans2==3|ans3==3|ans4==3)) {
+        ans1=3;
+      } else if (ans1==3) {
+        if (data_anno==0) {
+          ans1=2;
+        } else {
+          ans1=1;
+          if (ans2==1&ans3==1) {
+            ans4=2;
+          } else if (ans4==1&ans3==1) {
+            ans2=2;
+          } else if (ans2==1&ans4==1) {
+            ans3=2;
+          }
         }
       }
     }
@@ -733,8 +1011,7 @@ void keyPressed() {
         ans2=3;
         ans1=0;
       }
-    }
-    if (screen==2) {
+    } else if (screen==2|screen==4|screen==4) {
       if (!run_crono1&crono1>0) {
         if (run_crono2) {
           run_crono2=false;
@@ -748,6 +1025,37 @@ void keyPressed() {
           indice_sfida1=(int)random(parole.length);
           show1=new boolean[parole[indice_sfida1].length()];
           show1[0]=true;
+        }
+      }
+    } else if (screen==3) {
+      if (ans2==0&ans1==0) {
+        ans2=3;
+      } else if (ans2==3) {
+        if (chicomecosa_pos[1]==0) {
+          ans2=2;
+        } else {
+          ans2=1;
+          ans1=2;
+        }
+      } else if (ans2==0&ans1==3) {
+        ans2=3;
+        ans1=0;
+      }
+    } else if (screen==5) {
+      if (ans2==0&!(ans1==3|ans3==3|ans4==3)) {
+        ans2=3;
+      } else if (ans2==3) {
+        if (data_anno==1) {
+          ans2=2;
+        } else {
+          ans2=1;
+          if (ans1==1&ans3==1) {
+            ans4=2;
+          } else if (ans4==1&ans3==1) {
+            ans1=2;
+          } else if (ans1==1&ans4==1) {
+            ans3=2;
+          }
         }
       }
     }
@@ -765,13 +1073,46 @@ void keyPressed() {
       println(risposta+" "+index2+" "+ans1+" "+ans2);
       ans1=0;
       ans2=0;
+    } else if (screen==3) {
+      chicomecosa_index=(int)random(chicomecosa_domande.length);
+      shuffle(chicomecosa_pos);
+      ans1=0;
+      ans2=0;
+    } else if (screen==5) {
+      if (ans3==0&!(ans2==3|ans1==3|ans4==3)) {
+        ans3=3;
+      } else if (ans3==3) {
+        if (data_anno==2) {
+          ans3=2;
+        } else {
+          ans3=1;
+          if (ans2==1&ans1==1) {
+            ans4=2;
+          } else if (ans4==1&ans1==1) {
+            ans2=2;
+          } else if (ans2==1&ans4==1) {
+            ans1=2;
+          }
+        }
+      }
     }
   } else if (key=='v') {
-    if (screen==1) {
-      if (pos4[3]==0) {
-        ans4=2;
-      } else {
-        ans4=1;
+    if (screen==5) {
+      if (ans4==0&!(ans2==3|ans3==3|ans1==3)) {
+        ans4=3;
+      } else if (ans4==3) {
+        if (data_anno==3) {
+          ans4=2;
+        } else {
+          ans4=1;
+          if (ans2==1&ans3==1) {
+            ans1=2;
+          } else if (ans1==1&ans3==1) {
+            ans2=2;
+          } else if (ans2==1&ans1==1) {
+            ans3=2;
+          }
+        }
       }
     }
   }
