@@ -72,140 +72,81 @@ Chi ha progettato la celebre macchina di calcolo "Enigma", utilizzata durante la
 Qual è il nome della prima missione spaziale che ha raccolto e analizzato il suolo di un asteroide, "Ryugu"? | Missione Hayabusa2 (lanciata dal Giappone) | Missione Rosetta (lanciata dalla Guiana Francese)
 Qual è il nome del filosofo tedesco che ha formulato la "Dialettica della ragione" e ha influenzato la filosofia idealista? | Georg Wilhelm Friedrich Hegel | Immanuel Kant
 Chi è l’inventore del concetto di "entropia", un concetto centrale nella termodinamica? | Rudolf Clausius | William Thomson, 1º Barone Kelvin
-Qual è il nome della costellazione che contiene il celebre "Anello Nebuloso"? | Lira
-Chi ha sviluppato la teoria della "meccanica quantistica" che ha rivoluzionato la fisica del XX secolo? | Max Planck e Niels Bohr
-Qual è il nome dell'astronomo che ha studiato la "scintillazione stellare", un fenomeno legato all’atmosfera terrestre? | Sir William Herschel
-In quale secolo fu scritto "La Divina Commedia" di Dante Alighieri? | XIV secolo
-Chi ha scritto "Il Capitale", che ha avuto un enorme impatto sul pensiero economico e politico? | Karl Marx
-Chi ha ideato il concetto di "quark", le particelle fondamentali che compongono i protoni e neutroni? | Murray Gell-Mann
-Quale scienziato ha formulato la legge che descrive il comportamento dei gas perfetti, noto come "legge di Boyle"? | Robert Boyle
-Qual è la teoria che prevede l'esistenza di particelle subatomiche chiamate "quark"? | La teoria della cromodinamica quantistica (QCD)
-Qual è il nome della costellazione che ospita la stella più luminosa, Sirio, e che appartiene alla nostra galassia, la Via Lattea? | Costellazione del Cane Maggiore (Canis Major)
-Chi ha scritto il trattato scientifico "Philosophiæ Naturalis Principia Mathematica", che getta le basi della fisica classica? | Isaac Newton
-Qual è il nome della costellazione che ospita la stella più vicina al nostro sistema solare? | Alfa Centauri
-Qual è il nome dell'elemento chimico con simbolo "Rn", noto per essere un gas nobile radioattivo? | Radon
-In quale anno fu scoperto l'elemento "Uranio" e da chi? | 1789, da Martin Heinrich Klaproth
-Chi ha formulato il concetto di "empirismo"? | Aristotele
-Chi ha ideato la "Teoria delle stringhe", un ramo avanzato della fisica teorica? | Edward Witten
-In quale anno fu firmata la Dichiarazione di Indipendenza degli Stati Uniti d'America? | 1776
-Quale matematico ha ideato la "Geometria algebrica", basata sulla teoria delle varietà algebriche? | André Weil
-Chi ha teorizzato la "Teoria del caos"? | Edward Lorenz
-Quale fisico ha coniato il termine "Big Bang" per la teoria cosmologica dell'origine dell'universo? | Fred Hoyle
-Qual è il nome dell'epoca geologica che ha preceduto l'era Mesozoica? | Era Paleozoica
-Chi è l’autore del famoso romanzo "Il Mondo Nuovo"? | Aldous Huxley
-Qual è il nome della particella subatomica che è stata teorizzata per spiegare la massa e che è stata scoperta nel 2012 al CERN? | Bosone di Higgs
-Qual è il nome della famosa macchina di calcolo che ha decifrato il "codice Enigma" durante la Seconda Guerra Mondiale? | Macchina "Colossus"Chi fu l’autore del romanzo distopico "Il Mondo Nuovo"? | Aldous Huxley
-Quale scienziato ha contribuito con la formulazione della legge di gravitazione universale? | Isaac Newton
-In quale anno fu scoperto l'elemento "Uranio" e da chi? | 1789, da Martin Heinrich Klaproth
-Chi ha scritto "Don Chisciotte della Mancia", uno dei capolavori della letteratura mondiale? | Miguel de Cervantes
-
-
-Chi ha sviluppato la teoria della "meccanica quantistica" che ha rivoluzionato la fisica del XX secolo? | Max Planck e Niels Bohr
-Chi è il fondatore della teoria dell'evoluzione, che ha introdotto il concetto di selezione naturale? | Charles Darwin
-Qual è il nome dell'astronomo che ha studiato la "scintillazione stellare", un fenomeno legato all’atmosfera terrestre? | Sir William Herschel
-In quale secolo fu scritto "La Divina Commedia" di Dante Alighieri? | XIV secolo
-Chi ha scritto "Il Capitale", che ha avuto un enorme impatto sul pensiero economico e politico? | Karl Marx
-Chi ha teorizzato la "teoria dell'inflazione cosmica"? | Alan Guth
-Chi ha ideato il concetto di "quark", le particelle fondamentali che compongono i protoni e neutroni? | Murray Gell-Mann
-Quale scienziato ha formulato la legge che descrive il comportamento dei gas perfetti, noto come "legge di Boyle"? | Robert Boyle
-Qual è la teoria che prevede l'esistenza di particelle subatomiche chiamate "quark"? | La teoria della cromodinamica quantistica (QCD)
-Qual è il nome della costellazione che ospita la stella più luminosa, Sirio, e che appartiene alla nostra galassia, la Via Lattea? | Costellazione del Cane Maggiore (Canis Major)
-Chi ha scritto il trattato scientifico "Philosophiæ Naturalis Principia Mathematica", che getta le basi della fisica classica? | Isaac Newton
-Qual è il nome della costellazione che ospita la stella più vicina al nostro sistema solare? | Alfa Centauri
-Qual è il nome dell'elemento chimico con simbolo "Rn", noto per essere un gas nobile radioattivo? | Radon
-In quale anno fu scoperto l'elemento "Uranio" e da chi? | 1789, da Martin Heinrich Klaproth
-Chi ha formulato il concetto di "empirismo"? | Aristotele
-Chi ha ideato la "Teoria delle stringhe", un ramo avanzato della fisica teorica? | Edward Witten
-In quale anno fu firmata la Dichiarazione di Indipendenza degli Stati Uniti d'America? | 1776
-Quale matematico ha ideato la "Geometria algebrica", basata sulla teoria delle varietà algebriche? | André Weil
-Chi ha scritto "L'origine delle specie", un lavoro fondamentale per la biologia evolutiva? | Charles Darwin
-Chi ha teorizzato la "Teoria del caos"? | Edward Lorenz
-Quale fisico ha coniato il termine "Big Bang" per la teoria cosmologica dell'origine dell'universo? | Fred Hoyle
-Qual è il nome dell'epoca geologica che ha preceduto l'era Mesozoica? | Era Paleozoica
-Chi è l’autore del famoso romanzo "Il Mondo Nuovo"? | Aldous Huxley
-Qual è il nome della particella subatomica che è stata teorizzata per spiegare la massa e che è stata scoperta nel 2012 al CERN? | Bosone di Higgs
-Qual è il nome della famosa macchina di calcolo che ha decifrato il "codice Enigma" durante la Seconda Guerra Mondiale? | Macchina "Colossus"
-
-
-Qual è il nome della criptovaluta che ha superato Bitcoin in termini di capitalizzazione di mercato per un breve periodo nel 2021? | Ethereum
-Qual è il nome del social media app che ha visto una crescita esponenziale tra i giovani nel 2022, diventando la piattaforma dominante per i video brevi? | TikTok
-Chi ha lanciato il progetto "Blue Origin", che mira a rendere i voli spaziali commerciali una realtà? | Jeff Bezos
-Quale grande azienda automobilistica ha annunciato nel 2021 di voler diventare completamente elettrica entro il 2030? | Volvo
-Qual è il nome della startup che ha introdotto la "spesa del futuro" con una tecnologia di checkout automatizzato senza casse, come nei negozi Amazon Go? | Trigo Vision
-Quale serie TV ha battuto il record di visualizzazioni su Netflix nel 2021, diventando il contenuto più visto della piattaforma? | "Squid Game"
-Qual è il nome del fondatore della piattaforma di social media Clubhouse, che ha visto un boom di popolarità nel 2021? | Paul Davison e Rohan Seth
-Nel 2021, quale paese è stato il primo al mondo a lanciare una moneta digitale di banca centrale (CBDC)? | Bahamas (con la "Sand Dollar")
-Quale grande azienda di moda ha lanciato la sua linea di abbigliamento sportivo in collaborazione con l’atleta Naomi Osaka nel 2021? | Louis Vuitton
-Qual è il nome della piattaforma che ha lanciato nel 2021 il primo sistema operativo completamente decentralizzato per l’interoperabilità di blockchain? | Polkadot
-Qual è il nome della startup di intelligenza artificiale che ha sviluppato un software capace di scrivere articoli giornalistici automaticamente, che ha suscitato discussioni etiche nel 2022? | OpenAI (con GPT-3)
-Nel 2022, quale paese ha sperimentato un crollo della sua valuta nazionale a causa della crisi economica e politica, facendo uso massiccio di Bitcoin? | El Salvador
-Chi è il CEO di SpaceX e Tesla, noto per la sua affermazione che l'umanità dovrà colonizzare Marte per garantire la sopravvivenza a lungo termine? | Elon Musk
-Quale gigantesca azienda di e-commerce ha acquisito il marchio di moda di lusso "Mister Porter" nel 2021, espandendo la sua presenza nel settore dell'alta moda? | Farfetch
-Nel 2021, quale startup di biotecnologie ha lanciato un innovativo trattamento contro il cancro che impiega la tecnologia CRISPR? | CRISPR Therapeutics
-Quale grande azienda automobilistica ha presentato nel 2022 il primo modello completamente autonomo senza volante e pedali? | Mercedes-Benz
-Nel 2021, quale piattaforma social ha lanciato una funzione di "reazione al post" basata su "emoji-rivisitati", destinata ad aumentare l’engagement degli utenti? | Facebook (ora Meta)
-Quale grande istituzione finanziaria ha annunciato nel 2021 di voler investire miliardi nel settore delle criptovalute e blockchain, come parte di una sua nuova strategia? | JPMorgan Chase
-Qual è il nome della famosa piattaforma di video live streaming che ha acquisito una crescente base di utenti nei primi mesi del 2022 grazie al suo focus su contenuti di nicchia e giochi di ruolo? | Twitch
-Nel 2022, quale azienda ha lanciato la prima scarpa da corsa progettata per l'uso in metaverso, sfidando la realtà fisica e digitale? | Nike (con il progetto "Nikeland")
-Qual è il nome del fondatore della start-up che ha creato una piattaforma di “finanza decentralizzata” per dare accesso a prestiti senza intermediari? | Andre Cronje (Yearn Finance)
-Nel 2022, quale grande marchio tecnologico ha acquisito una startup che sviluppa software per il monitoraggio della salute mentale tramite intelligenza artificiale? | Google (acquisizione di "Happify")
-Nel 2021, quale gigantesca azienda di e-commerce ha acquisito il marchio di moda di lusso "Mister Porter" nel 2021? | Farfetch
-Nel 2022, quale paese ha creato una "moneta digitale sovrana" completamente basata su blockchain per la gestione dei fondi pubblici e privati? | Cina (con il Digital Yuan)
-Qual è il nome della piattaforma di investimento che ha aperto il primo "mercato di token azionari" dove è possibile acquistare e vendere frazioni di azioni di aziende quotate tramite blockchain? | FTX
-Nel 2022, quale importante nazione ha lanciato un "programma di alimentazione genetica", un sistema alimentare basato su coltivazioni genetiche create ad hoc per migliorare la resistenza al cambiamento climatico? | India
-Nel 2022, quale compagnia ha sviluppato la prima stampante 3D in grado di costruire case interamente in materiali sostenibili e riciclabili? | ICON
-Nel 2022, quale grande player finanziario ha iniziato a utilizzare un software basato su intelligenza artificiale per la previsione di crisi finanziarie globali? | Goldman Sachs
-Nel 2023, quale startup emergente nel settore della genetica ha completato il primo studio clinico su larga scala riguardante il "ringiovanimento genetico" umano? | Altos Labs
-Quale compagnia ha sviluppato il primo "sistema di trasporto a gravità zero" per spostamenti tra città, in grado di abbattere i costi di viaggio a livello globale? | Hyperloop Transportation Technologies
-Nel 2022, quale azienda di biotecnologie ha annunciato di aver sviluppato con successo un "vaccino universale" contro tutte le varianti del coronavirus? | Moderna (con il progetto "mRNA-1273")
-Qual è il nome del veicolo autonomo lanciato nel 2023 che ha completato un test di guida senza supervisione tra le principali metropoli del mondo? | Cruise Origin (da General Motors e Honda)
-Nel 2022, quale paese ha creato una "moneta digitale sovrana" completamente basata su blockchain per la gestione dei fondi pubblici e privati? | Cina (con il Digital Yuan)
-Quale grande azienda di tecnologia ha sviluppato un software di IA in grado di predire eventi futuri in ambito geopolitico, economico e sanitario, e lo ha utilizzato per monitorare l’evoluzione pandemica? | Palantir Technologies
-Qual è il nome della piattaforma di investimento che ha aperto il primo "mercato di token azionari" dove è possibile acquistare e vendere frazioni di azioni di aziende quotate tramite blockchain? | FTX
-Nel 2022, quale compagnia ha realizzato la prima stampante 3D in grado di costruire case interamente in materiali sostenibili e riciclabili? | ICON
-Nel 2023, quale paese ha creato un "programma di alimentazione genetica", un sistema alimentare basato su coltivazioni genetiche create ad hoc per migliorare la resistenza al cambiamento climatico? | India
-Qual è il nome dell’app di pagamento digitale che ha superato PayPal in alcuni paesi asiatici nel 2021, diventando la piattaforma di riferimento per le transazioni online? | Alipay
-Quale piattaforma di streaming video ha lanciato nel 2021 il suo servizio di gaming live, permettendo agli utenti di giocare insieme agli streamers? | YouTube Gaming
-Qual è il nome della startup tecnologica che ha introdotto la "stanza virtuale" dove gli utenti possono interagire in tempo reale, come un metaverso? | Spatial
-Nel 2021, quale importante compagnia aerospaziale ha annunciato di voler sviluppare un razzo che può decollare e atterrare come un aereo? | SpaceX
-Quale startup ha lanciato il primo "bancomat" in grado di scambiare criptovalute per denaro fisico in modo rapido e sicuro? | CoinCloud
-Nel 2022, quale innovativo brand tecnologico ha creato un dispositivo indossabile per monitorare il livello di ossigeno nel sangue senza bisogno di un sensore invasivo? | Oura
-Qual è il nome della piattaforma di social media che ha acquisito la start-up "Reels" nel 2020 per entrare nel mercato dei video brevi? | Facebook (Instagram Reels)
-Quale paese ha legalizzato nel 2022 la produzione di "cellule staminali" per la cura di malattie neurodegenerative come il morbo di Alzheimer? | Giappone
-Nel 2021, quale grande marchio di sport ha creato una "scarpa intelligente" in grado di monitorare le performance dell’atleta durante la corsa? | Adidas
-Quale piattaforma di "streaming musicale" ha introdotto nel 2022 un sistema di pagamento diretto agli artisti, bypassando i tradizionali intermediari? | Tidal
-
-Nel 2022, quale gigante del social media ha acquisito una piattaforma di social commerce incentrata sulla vendita di prodotti direttamente all'interno della app? | Instagram (acquisizione di "Threads")
-Quale brand di moda ha lanciato il primo prodotto di alta moda completamente personalizzabile grazie all’utilizzo dell’intelligenza artificiale? | Gucci
-Qual è il nome della startup che ha sviluppato una tecnologia per il trattamento dell’acqua potabile tramite un dispositivo portatile alimentato a energia solare? | LifeStraw
-Nel 2022, quale compagnia di biotecnologie ha lanciato un innovativo farmaco genico per la cura della distrofia muscolare di Duchenne? | Sarepta Therapeutics
-Quale sistema di pagamento digitale ha introdotto nel 2021 la funzionalità di "acquisto ora, paga dopo" come opzione di pagamento istantaneo per gli utenti? | Klarna
-Nel 2022, quale startup tecnologica ha annunciato lo sviluppo di un "sistema di realtà aumentata" che può essere usato per diagnosticare malattie dermatologiche direttamente tramite smartphone? | SkinVision
-Quale città è diventata il primo esempio al mondo di "città carbon neutral" grazie all’integrazione di energia rinnovabile e trasporti elettrici nel 2022? | Reykjavik, Islanda
-Nel 2021, quale paese ha lanciato il primo satellite spaziale che utilizza una propulsione a ioni per prolungare la durata della missione? | Cina
-Qual è il nome della nuova piattaforma di crowdfunding per startup tecnologiche che consente agli utenti di partecipare direttamente alla creazione di prodotti? | Republic
-Nel 2022, quale grande banca ha annunciato l'intenzione di implementare una tecnologia di "blockchain" per migliorare la sicurezza nelle transazioni bancarie internazionali? | Bank of New York Mellon
-
-Quale compagnia ha lanciato un servizio di "viaggio spaziale suborbitale" per il pubblico con il primo volo turistico che ha avuto successo nel 2022? | Blue Origin
-Nel 2022, quale startup ha sviluppato una tecnologia in grado di "riciclare" la plastica attraverso un processo chimico per crearne nuovi prodotti senza rifiuti? | PolyRecycle
-Quale compagnia ha introdotto il "primo robot sociale", in grado di interagire e comunicare con gli esseri umani tramite intelligenza artificiale avanzata? | Hanson Robotics (con il robot "Sophia")
-Nel 2023, quale azienda ha completato con successo il primo volo commerciale utilizzando un "aereo elettrico" per passeggeri, riducendo le emissioni di carbonio? | Alice (da Vertical Aerospace)
-Qual è il nome della piattaforma di "finanza decentralizzata" che nel 2022 ha lanciato una funzione di prestito che non richiede garanzie fisiche? | Aave
-Nel 2021, quale startup ha lanciato un'app che consente agli utenti di fare trading di energia rinnovabile in tempo reale tramite blockchain? | Power Ledger
-Nel 2022, quale grande azienda farmaceutica ha ricevuto l'approvazione per un farmaco che sfrutta la tecnologia CRISPR per trattare malattie genetiche rare? | Vertex Pharmaceuticals
-Qual è il nome del progetto di intelligenza artificiale che nel 2022 è riuscito a creare il primo "sogno digitale" di un sistema neurale artificiale? | Neuralink (di Elon Musk)
-Nel 2022, quale piattaforma di cloud computing ha implementato un sistema di "auto-ai" che crea, gestisce e adatta autonomamente sistemi di intelligenza artificiale in tempo reale? | Google Cloud (con "AutoML")
-Quale paese ha inaugurato nel 2023 un nuovo tipo di "autostrada intelligente", con sensori e auto a guida autonoma, per ridurre il traffico e aumentare la sicurezza? | Paesi Bassi
-
-Nel 2023, quale compagnia ha lanciato la "prima nave cargo a propulsione a idrogeno" per ridurre le emissioni di CO2 nel trasporto marittimo? | Maersk
-Quale grande produttore di semiconduttori ha sviluppato il primo "chip neuromorfico" che replica il funzionamento del cervello umano? | Intel
-Nel 2023, quale startup ha lanciato il primo "modulo abitativo spaziale" per il soggiorno umano permanente su Marte, con l’obiettivo di rendere possibile la colonizzazione? | SpaceX
-Qual è il nome della compagnia che nel 2023 ha introdotto una tecnologia di "teleportazione quantistica" per trasmettere dati a distanza senza latenza? | IBM (con il progetto "Quantum Network")
-Nel 2023, quale piattaforma ha creato un "metaverso basato su blockchain" in cui gli utenti possono vivere esperienze educative e professionali in ambienti digitali immersivi? | Decentraland
-Qual è il nome del primo progetto di "scambio genetico" lanciato nel 2023, in grado di manipolare il DNA umano per migliorare l’immunità naturale contro virus specifici? | Editas Medicine
-Nel 2022, quale compagnia ha creato una "piattaforma di agricoltura verticale" per coltivare cibo ad alta efficienza in ambienti urbani utilizzando intelligenza artificiale? | AeroFarms
-Quale compagnia ha sviluppato nel 2023 una "stazione di ricarica solare autonoma" per veicoli elettrici che consente la ricarica in aree remote e senza accesso alla rete elettrica? | Tesla
-Nel 2023, quale importante nazione ha inaugurato un "autostrada spaziale" per il trasporto di satelliti tra la Terra e la Stazione Spaziale Internazionale, tramite l’uso di razzi riutilizzabili? | Stati Uniti
-Qual è il nome della startup che ha sviluppato una "AI conversazionale" che può ricreare l’intero comportamento di una persona basandosi su un’analisi profonda delle sue interazioni passate? | Replika
-
-
+Chi ha sviluppato per primi la teoria della "meccanica quantistica" che ha rivoluzionato la fisica del XX secolo? | Max Planck e Niels Bohr | Paul Dirac e Erwin Schrödinger
+Qual è il nome dell'astronomo che ha studiato la "scintillazione stellare", un fenomeno legato all’atmosfera terrestre? | Sir William Herschel | Caroline Herschel
+In quale secolo fu scritto "La Divina Commedia" di Dante Alighieri? | XIV secolo | XV secolo
+Chi ha ideato il concetto di "quark", le particelle fondamentali che compongono i protoni e neutroni? | Murray Gell-Mann | Richard Feynman
+Qual è la teoria che prevede l'esistenza di particelle subatomiche chiamate "quark"? | La teoria della cromodinamica quantistica (QCD) | La teoria delle stringhe 
+Qual è il nome della costellazione che ospita la stella più luminosa, Sirio, e che appartiene alla nostra galassia, la Via Lattea? | Costellazione del Cane Maggiore (Canis Major) | Costellazione del centauro (Centaurus)
+Qual è il nome della costellazione che ospita la stella più vicina al nostro sistema solare? | Alfa Centauri | Sirio
+Qual è il nome dell'epoca geologica che ha preceduto l'era Mesozoica? | Era Paleozoica | Era Cenozoica
+Qual è il nome della famosa macchina di calcolo che ha decifrato il "codice Enigma" durante la Seconda Guerra Mondiale? | Macchina "Colossus" | La bomba polacca
+Qual è il nome della criptovaluta che ha superato Bitcoin in termini di capitalizzazione di mercato per un breve periodo nel 2021? | Ethereum | DOGE coin
+Qual è il nome del social media app che ha visto una crescita esponenziale tra i giovani nel 2022, diventando la piattaforma dominante per i video brevi? | TikTok | Instagram
+Chi ha lanciato il progetto "Blue Origin", che mira a rendere i voli spaziali commerciali una realtà? | Jeff Bezos | Elon Musk
+Quale grande azienda automobilistica ha annunciato nel 2021 di voler diventare completamente elettrica entro il 2030? | Volvo | Peugeot 
+Qual è il nome della startup che ha introdotto la "spesa del futuro" con una tecnologia di checkout automatizzato senza casse, come nei negozi Amazon Go? | Trigo Vision | Fast Shop
+Quale serie TV ha battuto il record di visualizzazioni su Netflix nel 2021, diventando il contenuto più visto della piattaforma? | "Squid Game" | "La casa di carta"
+Qual è il nome del fondatore della piattaforma di social media Clubhouse, che ha visto un boom di popolarità nel 2021? | Paul Davison e Rohan Seth |  Evan Spiegel, Bobby Murphy e Reggie Brown
+Nel 2021, quale paese è stato il primo al mondo a lanciare una moneta digitale di banca centrale (CBDC)? | Bahamas (con la "Sand Dollar") | El Salvador (con "Bitcoin")
+Quale grande azienda di moda ha lanciato la sua linea di abbigliamento sportivo in collaborazione con l’atleta Naomi Osaka nel 2021? | Louis Vuitton | Nike 
+Qual è il nome della piattaforma che ha lanciato nel 2021 il primo sistema operativo completamente decentralizzato per l’interoperabilità di blockchain? | Polkadot | Cosmos
+Qual è il nome della startup di intelligenza artificiale che ha sviluppato un software capace di scrivere articoli giornalistici automaticamente, che ha suscitato discussioni etiche nel 2022? | OpenAI (con GPT-3) | DeepMind (con AlphaGo)
+Nel 2022, quale paese ha sperimentato un crollo della sua valuta nazionale a causa della crisi economica e politica, facendo uso massiccio di Bitcoin? | El Salvador | Bahamas
+Quale gigantesca azienda di e-commerce ha acquisito il marchio di moda di lusso "Mister Porter" nel 2021, espandendo la sua presenza nel settore dell'alta moda? | Farfetch | Shein
+Nel 2021, quale startup di biotecnologie ha lanciato un innovativo trattamento contro il cancro che impiega la tecnologia CRISPR? | CRISPR Therapeutics | CRISPR farma
+Quale grande azienda automobilistica ha presentato nel 2022 il primo modello completamente autonomo senza volante e pedali? | Mercedes-Benz | BMW
+Nel 2021, quale piattaforma social ha lanciato una funzione di "reazione al post" basata su "emoji-rivisitati", destinata ad aumentare l’engagement degli utenti? | Facebook (ora Meta) | Instagram (ora Meta)
+Quale grande istituzione finanziaria ha annunciato nel 2021 di voler investire miliardi nel settore delle criptovalute e blockchain, come parte di una sua nuova strategia? | JPMorgan Chase | Bank of America
+Qual è il nome della famosa piattaforma di video live streaming che ha acquisito una crescente base di utenti nei primi mesi del 2022 grazie al suo focus su contenuti di nicchia e giochi di ruolo? | Twitch | Discord
+Nel 2022, quale azienda ha lanciato la prima scarpa da corsa progettata per l'uso in metaverso, sfidando la realtà fisica e digitale? | Nike (con il progetto "Nikeland") | Adidas ( con il progetto "Adidas-AR")
+Qual è il nome del fondatore della start-up che ha creato una piattaforma di “finanza decentralizzata” per dare accesso a prestiti senza intermediari? | Andre Cronje (Yearn Finance) | Mike Cagney (SoFi)
+Nel 2022, quale grande marchio tecnologico ha acquisito una startup che sviluppa software per il monitoraggio della salute mentale tramite intelligenza artificiale? | Google (acquisizione di "Happify") | Samsung (acquisizione di "Mindstrong Health") 
+Nel 2022, quale paese ha creato una "moneta digitale sovrana" completamente basata su blockchain per la gestione dei fondi pubblici e privati? | Cina (con il Digital Yuan) | Bahamas (con la "Sand Dollar")
+Qual è il nome della piattaforma di investimento che ha aperto il primo "mercato di token azionari" dove è possibile acquistare e vendere frazioni di azioni di aziende quotate tramite blockchain? | FTX | tZero
+Nel 2022, quale importante nazione ha lanciato un "programma di alimentazione genetica", un sistema alimentare basato su coltivazioni genetiche create ad hoc per migliorare la resistenza al cambiamento climatico? | India | Cina
+Nel 2022, quale compagnia ha sviluppato la prima stampante 3D in grado di costruire case interamente in materiali sostenibili e riciclabili? | ICON | WASP
+Nel 2022, quale grande player finanziario ha iniziato a utilizzare un software basato su intelligenza artificiale per la previsione di crisi finanziarie globali? | Goldman Sachs | Bank of America
+Nel 2023, quale startup emergente nel settore della genetica ha completato il primo studio clinico su larga scala riguardante il "ringiovanimento genetico" umano? | Altos Labs |Calico Labs
+Quale compagnia ha sviluppato il primo "sistema di trasporto a gravità zero" per spostamenti tra città, in grado di abbattere i costi di viaggio a livello globale? | Hyperloop Transportation Technologies | CRRC Corporation Limited
+Nel 2022, quale azienda di biotecnologie ha annunciato di aver sviluppato con successo un "vaccino universale" contro tutte le varianti del coronavirus? | Moderna (con il progetto "mRNA-1273") | Pfizer-BioNTech (con il progetto "Comirnaty") 
+Qual è il nome del veicolo autonomo lanciato nel 2023 che ha completato un test di guida senza supervisione tra le principali metropoli del mondo? | Cruise Origin (da General Motors e Honda) | Waymo One (da Alphabet)
+Quale grande azienda di tecnologia ha sviluppato un software di IA in grado di predire eventi futuri in ambito geopolitico, economico e sanitario, e lo ha utilizzato per monitorare l’evoluzione pandemica? | Palantir Technologies | Recorded Future
+Qual è il nome dell’app di pagamento digitale che ha superato PayPal in alcuni paesi asiatici nel 2021, diventando la piattaforma di riferimento per le transazioni online? | Alipay | Satispay
+Quale piattaforma di streaming video ha lanciato nel 2021 il suo servizio di gaming live, permettendo agli utenti di giocare insieme agli streamers? | YouTube Gaming | Discord
+Qual è il nome della startup tecnologica che ha introdotto la "stanza virtuale" dove gli utenti possono interagire in tempo reale, come un metaverso? | Spatial | Immersion 
+Nel 2021, quale importante compagnia aerospaziale ha annunciato di voler sviluppare un razzo che può decollare e atterrare come un aereo? | Blue Origin |SpaceX
+Quale startup ha lanciato il primo "bancomat" in grado di scambiare criptovalute per denaro fisico in modo rapido e sicuro? | CoinCloud | Genesis Coin
+Nel 2022, quale innovativo brand tecnologico ha creato un dispositivo indossabile per monitorare il livello di ossigeno nel sangue senza bisogno di un sensore invasivo? | Oura | Wellness Sensors
+Qual è il nome della piattaforma di social media che ha acquisito la start-up "Reels" nel 2020 per entrare nel mercato dei video brevi? | Facebook (Instagram Reels) | Youtube
+Quale paese ha legalizzato nel 2022 la produzione di "cellule staminali" per la cura di malattie neurodegenerative come il morbo di Alzheimer? | Giappone | Corea del sud
+Nel 2021, quale grande marchio di sport ha creato una "scarpa intelligente" in grado di monitorare le performance dell’atleta durante la corsa? | Adidas | Nike
+Quale piattaforma di "streaming musicale" ha introdotto nel 2022 un sistema di pagamento diretto agli artisti, bypassando i tradizionali intermediari? | Tidal | Deezer
+Quale brand di moda ha lanciato il primo prodotto di alta moda completamente personalizzabile grazie all’utilizzo dell’intelligenza artificiale? | Gucci | Fendi
+Qual è il nome della startup che ha sviluppato una tecnologia per il trattamento dell’acqua potabile tramite un dispositivo portatile alimentato a energia solare? | LifeStraw | PureSun
+Nel 2022, quale compagnia di biotecnologie ha lanciato un innovativo farmaco genico per la cura della distrofia muscolare di Duchenne? | Sarepta Therapeutics | Pietrasanta Pharma 
+Quale sistema di pagamento digitale ha introdotto nel 2021 la funzionalità di "acquisto ora, paga dopo" come opzione di pagamento istantaneo per gli utenti? | Klarna | PayPal
+Nel 2022, quale startup tecnologica ha annunciato lo sviluppo di un "sistema di realtà aumentata" che può essere usato per diagnosticare malattie dermatologiche direttamente tramite smartphone? | SkinVision | DermTech
+Quale città è diventata il primo esempio al mondo di "città carbon neutral" grazie all’integrazione di energia rinnovabile e trasporti elettrici nel 2022? | Reykjavik, Islanda | Amsterdam, Paesi Bassi
+Nel 2021, quale paese ha lanciato il primo satellite spaziale che utilizza una propulsione a ioni per prolungare la durata della missione? | Cina | Giappone
+Qual è il nome della nuova piattaforma di crowdfunding per startup tecnologiche che consente agli utenti di partecipare direttamente alla creazione di prodotti? | Republic | Patron
+Nel 2022, quale grande banca ha annunciato l'intenzione di implementare una tecnologia di "blockchain" per migliorare la sicurezza nelle transazioni bancarie internazionali? | Bank of New York Mellon | Bank of America
+Quale compagnia ha lanciato un servizio di "viaggio spaziale suborbitale" per il pubblico con il primo volo turistico che ha avuto successo nel 2022? | Blue Origin | Virgin Galactic
+Nel 2022, quale startup ha sviluppato una tecnologia in grado di "riciclare" la plastica attraverso un processo chimico per crearne nuovi prodotti senza rifiuti? | PolyRecycle | The Plastic Bank
+Quale compagnia ha introdotto il "primo robot sociale", in grado di interagire e comunicare con gli esseri umani tramite intelligenza artificiale avanzata? | Hanson Robotics (con il robot "Sophia") | Boston Dynamics (con il robot "Atlas")
+Nel 2023, quale azienda ha completato con successo il primo volo commerciale utilizzando un "aereo elettrico" per passeggeri, riducendo le emissioni di carbonio? | Alice (da Vertical Aerospace) | Lilium Jet (da Lilium)
+Qual è il nome della piattaforma di "finanza decentralizzata" che nel 2022 ha lanciato una funzione di prestito che non richiede garanzie fisiche? | Aave | Satispay 
+Nel 2021, quale startup ha lanciato un'app che consente agli utenti di fare trading di energia rinnovabile in tempo reale tramite blockchain? | Power Ledger | Future Exchange
+Nel 2022, quale grande azienda farmaceutica ha ricevuto l'approvazione per un farmaco che sfrutta la tecnologia CRISPR per trattare malattie genetiche rare? | Vertex Pharmaceuticals | Astra Zeneca
+Qual è il nome del progetto di intelligenza artificiale che nel 2022 è riuscito a creare il primo "sogno digitale" di un sistema neurale artificiale? | Neuralink (di Elon Musk) | Deep mind (di Jeff Bezos)
+Nel 2022, quale piattaforma di cloud computing ha implementato un sistema di "auto-ai" che crea, gestisce e adatta autonomamente sistemi di intelligenza artificiale in tempo reale? | Google Cloud (con "AutoML")| IBM (con "SM")
+Quale paese ha inaugurato nel 2023 un nuovo tipo di "autostrada intelligente", con sensori e auto a guida autonoma, per ridurre il traffico e aumentare la sicurezza? | Paesi Bassi | Germania
+Nel 2023, quale compagnia ha lanciato la "prima nave cargo a propulsione a idrogeno" per ridurre le emissioni di CO2 nel trasporto marittimo? | Maersk Line | Mediterranean Shipping Company (MSC)
+Quale grande produttore di semiconduttori ha sviluppato il primo "chip neuromorfico" che replica il funzionamento del cervello umano? | Intel | Nvidea 
+Nel 2023, quale startup ha lanciato il primo "modulo abitativo spaziale" per il soggiorno umano permanente su Marte, con l’obiettivo di rendere possibile la colonizzazione? | SpaceX | Bigelow Aerospace
+Qual è il nome della compagnia che nel 2023 ha introdotto una tecnologia di "teleportazione quantistica" per trasmettere dati a distanza senza latenza? | IBM (con il progetto "Quantum Network") | Intel (con il progetto "Horse Ridge")
+Qual è il nome del primo progetto di "scambio genetico" lanciato nel 2023, in grado di manipolare il DNA umano per migliorare l’immunità naturale contro virus specifici? | Editas Medicine | DNA Pharma ltd
+Nel 2022, quale compagnia ha creato una "piattaforma di agricoltura verticale" per coltivare cibo ad alta efficienza in ambienti urbani utilizzando intelligenza artificiale? | AeroFarms | CityFarms
+Quale compagnia ha sviluppato nel 2023 una "stazione di ricarica solare autonoma" per veicoli elettrici che consente la ricarica in aree remote e senza accesso alla rete elettrica? | Tesla | Ford 
+Nel 2023, quale importante nazione ha inaugurato un "autostrada spaziale" per il trasporto di satelliti tra la Terra e la Stazione Spaziale Internazionale, tramite l’uso di razzi riutilizzabili? | Stati Uniti | Federazione Russa
+Qual è il nome della startup che ha sviluppato una "AI conversazionale" che può ricreare l’intero comportamento di una persona basandosi su un’analisi profonda delle sue interazioni passate? | Replika | Mirror
