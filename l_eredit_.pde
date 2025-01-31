@@ -1,4 +1,4 @@
-import java.io.FileReader; //<>//
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.nio.charset.CharsetEncoder;
@@ -84,6 +84,8 @@ String[] triello_rispostaV={};
 String[] triello_risposta1={};
 String[] triello_risposta2={};
 String[] triello_risposta3={};
+int []triello_pos={0, 1, 2, 3};
+boolean[] triello_used={false, false, false, false, false, false, false};
 
 void setup() {
   fullScreen();
@@ -124,37 +126,37 @@ void setup() {
   triello_domanda=concat_string(triello_domanda, "Quale dei seguenti non è il nome dato ad un uragano che ha colpito gli Stati Uniti d'America?");
   triello_domanda=concat_string(triello_domanda, "Quale delle seguenti nazioni ha ottenuto più medagie olimpiche nella storia dei giochi moderni con un totale di 2543?");
 
-  triello_rispostaV=concat_string(triello_rispostaV, "");
-  triello_rispostaV=concat_string(triello_rispostaV, "");
-  triello_rispostaV=concat_string(triello_rispostaV, "");
-  triello_rispostaV=concat_string(triello_rispostaV, "");
-  triello_rispostaV=concat_string(triello_rispostaV, "");
-  triello_rispostaV=concat_string(triello_rispostaV, "");
-  triello_rispostaV=concat_string(triello_rispostaV, "");
+  triello_rispostaV=concat_string(triello_rispostaV, "trapianto di rene");
+  triello_rispostaV=concat_string(triello_rispostaV, "Toyota");
+  triello_rispostaV=concat_string(triello_rispostaV, "GTA: San Andreas");
+  triello_rispostaV=concat_string(triello_rispostaV, "38");
+  triello_rispostaV=concat_string(triello_rispostaV, "Luigi");
+  triello_rispostaV=concat_string(triello_rispostaV, "Uragano Karen");
+  triello_rispostaV=concat_string(triello_rispostaV, "Stati Uniti d'America");
 
-  triello_risposta1=concat_string(triello_risposta1, "");
-  triello_risposta1=concat_string(triello_risposta1, "");
-  triello_risposta1=concat_string(triello_risposta1, "");
-  triello_risposta1=concat_string(triello_risposta1, "");
-  triello_risposta1=concat_string(triello_risposta1, "");
-  triello_risposta1=concat_string(triello_risposta1, "");
-  triello_risposta1=concat_string(triello_risposta1, "");
+  triello_risposta1=concat_string(triello_risposta1, "trapianto di cuore");
+  triello_risposta1=concat_string(triello_risposta1, "Volkswagen Group");
+  triello_risposta1=concat_string(triello_risposta1, "Fortnight");
+  triello_risposta1=concat_string(triello_risposta1, "36");
+  triello_risposta1=concat_string(triello_risposta1, "Carlo");
+  triello_risposta1=concat_string(triello_risposta1, "Uragano Carol");
+  triello_risposta1=concat_string(triello_risposta1, "Germania");
 
-  triello_risposta2=concat_string(triello_risposta2, "");
-  triello_risposta2=concat_string(triello_risposta2, "");
-  triello_risposta2=concat_string(triello_risposta2, "");
-  triello_risposta2=concat_string(triello_risposta2, "");
-  triello_risposta2=concat_string(triello_risposta2, "");
-  triello_risposta2=concat_string(triello_risposta2, "");
-  triello_risposta2=concat_string(triello_risposta2, "");
+  triello_risposta2=concat_string(triello_risposta2, "trapianto di polmoni");
+  triello_risposta2=concat_string(triello_risposta2, "Stellantis");
+  triello_risposta2=concat_string(triello_risposta2, "Call of Duty");
+  triello_risposta2=concat_string(triello_risposta2, "35");
+  triello_risposta2=concat_string(triello_risposta2, "Enrico");
+  triello_risposta2=concat_string(triello_risposta2, "Uragano Ike");
+  triello_risposta2=concat_string(triello_risposta2, "Paesi Bassi");
 
-  triello_risposta3=concat_string(triello_risposta3, "");
-  triello_risposta3=concat_string(triello_risposta3, "");
-  triello_risposta3=concat_string(triello_risposta3, "");
-  triello_risposta3=concat_string(triello_risposta3, "");
-  triello_risposta3=concat_string(triello_risposta3, "");
-  triello_risposta3=concat_string(triello_risposta3, "");
-  triello_risposta3=concat_string(triello_risposta3, "");
+  triello_risposta3=concat_string(triello_risposta3, "trapianto di fegato");
+  triello_risposta3=concat_string(triello_risposta3, "General Motors");
+  triello_risposta3=concat_string(triello_risposta3, "Half life");
+  triello_risposta3=concat_string(triello_risposta3, "31");
+  triello_risposta3=concat_string(triello_risposta3, "Giorgio");
+  triello_risposta3=concat_string(triello_risposta3, "Uragano Irma");
+  triello_risposta3=concat_string(triello_risposta3, "Italia");
 
   target =new File(obbiettivo_add2);
   try {
@@ -573,13 +575,47 @@ void draw() {
   } else if (screen==9) {
     if (triello_index==0) {
       background(255);
-      fill(255);
+      if (triello_used[0]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width/4-width/10, height/6-height/12, width/5, height/6);
+      if (triello_used[1]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width*3/4-width/10, height/6-height/12, width/5, height/6);
+      if (triello_used[2]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width/4-width/10, height*5/6-height/12, width/5, height/6);
+      if (triello_used[3]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width*3/4-width/10, height*5/6-height/12, width/5, height/6);
+      if (triello_used[4]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width/6-width/10, height*3/6-height/12, width/5, height/6);
+      if (triello_used[5]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width*3/6-width/10, height*3/6-height/12, width/5, height/6);
+      if (triello_used[6]) {
+        fill(255, 255, 0);
+      } else {
+        fill(255);
+      }
       rect(width*5/6-width/10, height*3/6-height/12, width/5, height/6);
       fill(0);
       textAlign(CENTER, CENTER);
@@ -592,6 +628,102 @@ void draw() {
       text("meteorologia", width*3/6-width/10, height*3/6-height/12, width/5, height/6);
       text("sport", width*5/6-width/10, height*3/6-height/12, width/5, height/6);
     } else if (triello_index>=1) {
+      background(255);
+      textAlign(CENTER, CENTER);
+      stroke(0);
+      fill(255);
+      rect(width/10, height/8, (width/10)*8, height*0.4);
+      fill(0);
+      textSize(60);
+
+      text(triello_domanda[triello_index-1], width/10, height/8, (width/10)*8, height*0.4);
+      if (ans3==0) {
+        fill(255);
+      } else if (ans3==1) {
+        fill(255, 0, 0);
+      } else if (ans3==2) {
+        fill(0, 255, 0);
+      } else if (ans3==3) {
+        fill(255, 255, 0);
+      }
+      rect(width/10, (height/8)*6, (width/10)*4-10, (height/8));
+      fill(0);
+      textSize(70);
+      if (triello_pos[2]==0) {
+        text(triello_rispostaV[triello_index-1], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+      } else if (triello_pos[2]==1) {
+        text(triello_risposta1[triello_index-1], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+      } else if (triello_pos[2]==2) {
+        text(triello_risposta2[triello_index-1], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+      } else if (triello_pos[2]==3) {
+        text(triello_risposta3[triello_index-1], width/10, (height/8)*6, (width/10)*4-10, (height/8));
+      }
+
+      if (ans4==0) {
+        fill(255);
+      } else if (ans4==1) {
+        fill(255, 0, 0);
+      } else if (ans4==2) {
+        fill(0, 255, 0);
+      } else if (ans4==3) {
+        fill(255, 255, 0);
+      }
+      rect(width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+      fill(0);
+      textSize(70);
+      if (triello_pos[3]==0) {
+        text(triello_rispostaV[triello_index-1], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+      } else if (triello_pos[3]==1) {
+        text(triello_risposta1[triello_index-1], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+      } else if (triello_pos[3]==2) {
+        text(triello_risposta2[triello_index-1], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+      } else if (triello_pos[3]==3) {
+        text(triello_risposta3[triello_index-1], width/10+(width/10)*4+10, (height/8)*6, (width/10)*4-10, (height/8));
+      }
+
+      if (ans1==0) {
+        fill(255);
+      } else if (ans1==1) {
+        fill(255, 0, 0);
+      } else if (ans1==2) {
+        fill(0, 255, 0);
+      } else if (ans1==3) {
+        fill(255, 255, 0);
+      }
+      rect(width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      fill(0);
+      textSize(70);
+      if (triello_pos[0]==0) {
+        text(triello_rispostaV[triello_index-1], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      } else if (triello_pos[0]==1) {
+        text(triello_risposta1[triello_index-1], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      } else if (triello_pos[0]==2) {
+        text(triello_risposta2[triello_index-1], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      } else if (triello_pos[0]==3) {
+        text(triello_risposta3[triello_index-1], width/10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      }
+
+      if (ans2==0) {
+        fill(255);
+      } else if (ans2==1) {
+        fill(255, 0, 0);
+      } else if (ans2==2) {
+        fill(0, 255, 0);
+      } else if (ans2==3) {
+        fill(255, 255, 0);
+      }
+      rect(width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      fill(0);
+      textSize(70);
+      if (triello_pos[1]==0) {
+        text(triello_rispostaV[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      } else if (triello_pos[1]==1) {
+        text(triello_risposta1[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      } else if (triello_pos[1]==2) {
+        text(triello_risposta2[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      } else if (triello_pos[1]==3) {
+        text(triello_risposta3[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      }
     }
   }
 }
@@ -811,7 +943,14 @@ void init() {
     } else if (data_anno==3) {
       data_index=(int)random(data_2000.length);
     }
-  } else if (screen==7) {
+  } else if (screen==9) {
+    triello_used[0]=false;
+    triello_used[1]=false;
+    triello_used[2]=false;
+    triello_used[3]=false;
+    triello_used[4]=false;
+    triello_used[5]=false;
+    triello_used[6]=false;
   }
 }
 
@@ -1005,6 +1144,27 @@ void keyPressed() {
           data_index=(int)random(data_2000.length);
         }
       }
+    } else if (screen==9) {
+      if (ans1==3|ans2==3|ans3==3|ans4==3) {
+        if (ans1==3) {
+          ans1=0;
+        }
+        if (ans2==3) {
+          ans2=0;
+        }
+        if (ans3==3) {
+          ans3=0;
+        }
+        if (ans4==3) {
+          ans4=0;
+        }
+      } else {
+        triello_index=0;
+        ans1=0;
+        ans2=0;
+        ans3=0;
+        ans4=0;
+      }
     }
   } else if (key=='z') {
     if (screen==1) {
@@ -1056,6 +1216,23 @@ void keyPressed() {
         ans1=3;
       } else if (ans1==3) {
         if (data_anno==0) {
+          ans1=2;
+        } else {
+          ans1=1;
+          if (ans2==1&ans3==1) {
+            ans4=2;
+          } else if (ans4==1&ans3==1) {
+            ans2=2;
+          } else if (ans2==1&ans4==1) {
+            ans3=2;
+          }
+        }
+      }
+    } else if (screen==9) {
+      if (ans4==0&!(ans2==3|ans3==3|ans1==3)) {
+        ans1=3;
+      } else if (ans1==3) {
+        if (triello_pos[0]==0) {
           ans1=2;
         } else {
           ans1=1;
@@ -1131,6 +1308,23 @@ void keyPressed() {
           }
         }
       }
+    } else if (screen==9) {
+      if (ans2==0&!(ans1==3|ans3==3|ans4==3)) {
+        ans2=3;
+      } else if (ans2==3) {
+        if (triello_pos[1]==0) {
+          ans2=2;
+        } else {
+          ans2=1;
+          if (ans1==1&ans3==1) {
+            ans4=2;
+          } else if (ans4==1&ans3==1) {
+            ans1=2;
+          } else if (ans1==1&ans4==1) {
+            ans3=2;
+          }
+        }
+      }
     }
   } else if (key=='c') {
     if (screen==1) {
@@ -1168,6 +1362,23 @@ void keyPressed() {
           }
         }
       }
+    } else if (screen==9) {
+      if (ans3==0&!(ans2==3|ans1==3|ans4==3)) {
+        ans3=3;
+      } else if (ans3==3) {
+        if (triello_pos[2]==0) {
+          ans3=2;
+        } else {
+          ans3=1;
+          if (ans2==1&ans1==1) {
+            ans4=2;
+          } else if (ans4==1&ans1==1) {
+            ans2=2;
+          } else if (ans2==1&ans4==1) {
+            ans1=2;
+          }
+        }
+      }
     }
   } else if (key=='v') {
     if (screen==5) {
@@ -1187,7 +1398,80 @@ void keyPressed() {
           }
         }
       }
+    } else if (screen==9) {
+      if (ans4==0&!(ans2==3|ans3==3|ans1==3)) {
+        ans4=3;
+      } else if (ans4==3) {
+        if (triello_pos[3]==0) {
+          ans4=2;
+        } else {
+          ans4=1;
+          if (ans2==1&ans3==1) {
+            ans1=2;
+          } else if (ans1==1&ans3==1) {
+            ans2=2;
+          } else if (ans2==1&ans1==1) {
+            ans3=2;
+          }
+        }
+      }
     }
+  } else if (key=='1') {
+    triello_index=1;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[0]=true;
+    shuffle(triello_pos);
+  } else if (key=='2') {
+    triello_index=2;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[1]=true;
+    shuffle(triello_pos);
+  } else if (key=='3') {
+    triello_index=3;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[2]=true;
+    shuffle(triello_pos);
+  } else if (key=='4') {
+    triello_index=4;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[3]=true;
+    shuffle(triello_pos);
+  } else if (key=='5') {
+    triello_index=5;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[4]=true;
+    shuffle(triello_pos);
+  } else if (key=='6') {
+    triello_index=6;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[5]=true;
+    shuffle(triello_pos);
+  } else if (key=='7') {
+    triello_index=7;
+    ans1=0;
+    ans2=0;
+    ans3=0;
+    ans4=0;
+    triello_used[6]=true;
+    shuffle(triello_pos);
   } else if (key=='y') {
     doppio.play();
   }
