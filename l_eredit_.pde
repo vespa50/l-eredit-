@@ -21,6 +21,9 @@ SoundFile ghi_nok;
 SoundFile ghi_minuto;
 SoundFile ghi_vittoria;
 SoundFile triello;
+SoundFile urlo;
+SoundFile clown;
+SoundFile applausi;
 
 PImage back;
 
@@ -127,6 +130,9 @@ void setup() {
   ghi_minuto= new SoundFile(this, "GHI- Minuto di tempo.mp3");
   ghi_vittoria= new SoundFile(this, "GHI- Vittoria.mp3");
   triello= new SoundFile(this, "Triello.mp3");
+  urlo= new SoundFile(this, "Urlo.mp3");
+  clown= new SoundFile(this, "Popi popi.mp3");
+  applausi= new SoundFile(this, "Applauso.mp3");
 
   attoriF=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, false);
   attoriV=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, true);
@@ -1678,7 +1684,13 @@ void keyPressed() {
       ghi_minuto.pause();
     }
     ghi_vittoria.play();
-  } else if (key=='o') {
+  }else if (key=='b') {
+    applausi.play();
+  } else if (key=='m') {
+    clown.play();
+  }else if (key=='n') {
+    urlo.play();
+  }else if (key=='o') {
     if (sigla.isPlaying()) {
       sigla.pause();
     }
@@ -1709,9 +1721,9 @@ void keyPressed() {
     if (attori.isPlaying()) {
       attori.pause();
     }
-    if (ghi_start.isPlaying()) {
+    /*if (ghi_start.isPlaying()) {
       ghi_start.pause();
-    }
+    }*/
     if (ghi_ok.isPlaying()) {
       ghi_ok.pause();
     }
@@ -1726,6 +1738,15 @@ void keyPressed() {
     }
     if (triello.isPlaying()) {
       triello.pause();
+    }
+    if (urlo.isPlaying()) {
+      urlo.pause();
+    }
+    if (clown.isPlaying()) {
+      clown.pause();
+    }
+    if (applausi.isPlaying()) {
+      applausi.pause();
     }
   }
 }
