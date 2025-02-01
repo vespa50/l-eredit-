@@ -352,7 +352,7 @@ void draw() {
       run_crono1=false;
       crono1=0;
       if (!tempo.isPlaying()) {
-        tempo.loop();
+        tempo.play();
       }
       if (millis()%1000<500) {
         noFill();
@@ -387,7 +387,7 @@ void draw() {
       run_crono2=false;
       crono2=0;
       if (!tempo.isPlaying()) {
-        tempo.loop();
+        tempo.play();
       }
       if (millis()%1000<500) {
         noFill();
