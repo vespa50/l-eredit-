@@ -15,12 +15,12 @@ SoundFile libri;
 SoundFile film;
 SoundFile comuni;
 SoundFile attori;
-
 SoundFile ghi_start;
 SoundFile ghi_ok;
 SoundFile ghi_nok;
 SoundFile ghi_minuto;
 SoundFile ghi_vittoria;
+SoundFile triello;
 
 PImage back;
 
@@ -120,7 +120,13 @@ void setup() {
   libri= new SoundFile(this, "Titoli libri.mp3");
   film= new SoundFile(this, "Titoli film.mp3");
   comuni= new SoundFile(this, "Comuni italiani.mp3");
-  attori= new SoundFile(this, "Nome autori.mp3");
+  attori= new SoundFile(this, "Nome attori.mp3");
+  //ghi_start= new SoundFile(this, "GHI- Inizio.m4a");
+  ghi_ok= new SoundFile(this, "GHI- Parola giusta.mp3");
+  ghi_nok= new SoundFile(this, "GHI- Parola sbagliata.mp3");
+  ghi_minuto= new SoundFile(this, "GHI- Minuto di tempo.mp3");
+  ghi_vittoria= new SoundFile(this, "GHI- Vittoria.mp3");
+  triello= new SoundFile(this, "Triello.mp3");
 
   attoriF=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, false);
   attoriV=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, true);
@@ -508,6 +514,12 @@ void draw() {
       textSize(50);
       text(indice_sfida2+"", width/2+20, height/3, width/2-40, height/3);
     }
+  } else if (screen==3&millis()-time0<5000) {// chicomecosa
+    image(back, 0, 0, width, height);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    textSize(200);
+    text("CHI,COME,COSA", width/2, height/2);
   } else if (screen==3) {
     image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
@@ -550,6 +562,12 @@ void draw() {
     } else if (chicomecosa_pos[1]==1) {
       text(chicomecosa_rispF[chicomecosa_index], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
     }
+  } else if (screen==5&millis()-time0<5000) {// DATE
+    image(back, 0, 0, width, height);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    textSize(200);
+    text("DATE", width/2, height/2);
   } else if (screen==5) {
     image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
@@ -630,6 +648,12 @@ void draw() {
     fill(255);
     textSize(200);
     text("PAROLONI", width/2, height/2);
+  } else if (screen==9&millis()-time0<5000) {// ce o non ce
+    image(back, 0, 0, width, height);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    textSize(200);
+    text("TRIELLO", width/2, height/2);
   } else if (screen==9) {
     if (triello_index==0) {
       image(back, 0, 0, width, height);
@@ -783,6 +807,12 @@ void draw() {
         text(triello_risposta3[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
       }
     }
+  } else if (screen==10&millis()-time0<5000) {// ce o non ce
+    image(back, 0, 0, width, height);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    textSize(200);
+    text("100 SECONDI", width/2, height/2);
   } else if (screen==10|screen==11) {
     image(back, 0, 0, width, height);
     fill(255);
@@ -1053,12 +1083,27 @@ void init() {
     triello_used[4]=false;
     triello_used[5]=false;
     triello_used[6]=false;
+    triello.loop();
   } else if (screen==10) {
     run_crono1=false;
     crono1=100000;
   } else if (screen==11) {
     run_crono1=false;
     crono1=60000;
+    //ghi_start.play();
+  }
+  if (screen!=9&triello.isPlaying()) {
+    triello.stop();
+  } else if (screen!=1) {
+    if (attori.isPlaying()) {
+      attori.stop();
+    } else if (film.isPlaying()) {
+      film.stop();
+    } else  if (libri.isPlaying()) {
+      libri.stop();
+    } else if (comuni.isPlaying()) {
+      comuni.stop();
+    }
   }
 }
 
@@ -1222,6 +1267,7 @@ void keyPressed() {
     if (screen>11) {
       screen=0;
     }
+    time0=millis();
   } else if (key=='a') {
     if (screen==3) {
       chicomecosa_index=(int)random(chicomecosa_domande.length);
@@ -1371,9 +1417,15 @@ void keyPressed() {
       if (run_crono1) {
         run_crono1=false;
         crono1=crono1-(millis()-crono1_t0);
+        if (screen==11) {
+          ghi_minuto.pause();
+        }
       } else {
         crono1_t0=millis();
         run_crono1=true;
+        if (screen==11) {
+          ghi_minuto.play();
+        }
       }
     }
   } else if (key=='x') {
@@ -1617,5 +1669,63 @@ void keyPressed() {
     doppio.play();
   } else if (key=='u') {
     aumento.play();
+  } else if (key=='h') {
+    ghi_ok.play();
+  } else if (key=='j') {
+    ghi_nok.play();
+  } else if (key=='l') {
+    if (ghi_minuto.isPlaying()) {
+      ghi_minuto.pause();
+    }
+    ghi_vittoria.play();
+  } else if (key=='o') {
+    if (sigla.isPlaying()) {
+      sigla.pause();
+    }
+    if (tempo.isPlaying()) {
+      tempo.pause();
+    }
+    if (doppio.isPlaying()) {
+      doppio.pause();
+    }
+    if (aumento.isPlaying()) {
+      aumento.pause();
+    }
+    if (esatto.isPlaying()) {
+      esatto.pause();
+    }
+    if (sbagliato.isPlaying()) {
+      sbagliato.pause();
+    }
+    if (libri.isPlaying()) {
+      libri.pause();
+    }
+    if (film.isPlaying()) {
+      film.pause();
+    }
+    if (comuni.isPlaying()) {
+      comuni.pause();
+    }
+    if (attori.isPlaying()) {
+      attori.pause();
+    }
+    if (ghi_start.isPlaying()) {
+      ghi_start.pause();
+    }
+    if (ghi_ok.isPlaying()) {
+      ghi_ok.pause();
+    }
+    if (ghi_nok.isPlaying()) {
+      ghi_nok.pause();
+    }
+    if (ghi_minuto.isPlaying()) {
+      ghi_minuto.pause();
+    }
+    if (ghi_vittoria.isPlaying()) {
+      ghi_vittoria.pause();
+    }
+    if (triello.isPlaying()) {
+      triello.pause();
+    }
   }
 }
