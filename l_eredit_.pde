@@ -8,6 +8,22 @@ import processing.sound.*;
 SoundFile sigla;
 SoundFile tempo;
 SoundFile doppio;
+SoundFile aumento;
+SoundFile esatto;
+SoundFile sbagliato;
+SoundFile libri;
+SoundFile film;
+SoundFile comuni;
+SoundFile attori;
+
+SoundFile ghi_start;
+SoundFile ghi_ok;
+SoundFile ghi_nok;
+SoundFile ghi_minuto;
+SoundFile ghi_vittoria;
+
+PImage back;
+
 
 int screen=0;
 boolean start=false;
@@ -21,6 +37,8 @@ String obbiettivo_add2 = "C:\\Users\\trava\\Desktop\\l_eredit_\\domande2.txt";
 String obbiettivo_add4 = "C:\\Users\\trava\\Desktop\\l_eredit_\\domande4.txt";
 BufferedReader reader;
 File target;
+
+int time0=0;
 
 String [] domanda2={};
 String [] ans12={};
@@ -90,11 +108,19 @@ boolean[] triello_used={false, false, false, false, false, false, false};
 void setup() {
   fullScreen();
   //size(400, 400);
-  background(255);
+  back=loadImage("C:\\Users\\trava\\Desktop\\l_eredit_\\back.jpg");
+  image(back, 0, 0, width, height);
 
   sigla = new SoundFile(this, "Sigla_iniziale.mp3");
   tempo= new SoundFile(this, "Tempo_scaduto.mp3");
   doppio= new SoundFile(this, "Doppio_errore.mp3");
+  aumento= new SoundFile(this, "Aumento_denaro.mp3");
+  esatto= new SoundFile(this, "Risposta_esatta.mp3");
+  sbagliato= new SoundFile(this, "Risposta_sbagliata.mp3");
+  libri= new SoundFile(this, "Titoli libri.mp3");
+  film= new SoundFile(this, "Titoli film.mp3");
+  comuni= new SoundFile(this, "Comuni italiani.mp3");
+  attori= new SoundFile(this, "Nome autori.mp3");
 
   attoriF=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, false);
   attoriV=load_cenonce("C:\\Users\\trava\\Desktop\\l_eredit_\\attori.txt", attoriV, attoriF, true);
@@ -215,17 +241,42 @@ void setup() {
 
 void draw() {
   if (screen==0) {// sigla
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
-    stroke(0);
-    fill(0);
+    fill(255);
     textSize(200);
     text("L'EREDITA'", width/2, height/2);
     if (!sigla.isPlaying()) {
       sigla.loop();
     }
+  } else if (screen==1&millis()-time0<12000) {// ce o non ce
+    image(back, 0, 0, width, height);
+    textAlign(CENTER, CENTER);
+    fill(255);
+    textSize(200);
+    if (index_cenonce==0) {
+      if (!attori.isPlaying()) {
+        attori.play();
+      }
+      text("CE' O NON CE'\n NOMI DI ATTORI", width/2, height/2);
+    } else if (index_cenonce==1) {
+      if (!comuni.isPlaying()) {
+        comuni.play();
+      }
+      text("CE' O NON CE'\n COMUNI ITALIANI", width/2, height/2);
+    } else if (index_cenonce==2) {
+      if (!film.isPlaying()) {
+        film.play();
+      }
+      text("CE' O NON CE'\n TITOLI DI FILM", width/2, height/2);
+    } else if (index_cenonce==3) {
+      if (!libri.isPlaying()) {
+        libri.play();
+      }
+      text("CE' O NON CE'\n TITOLI DI LIBRI", width/2, height/2);
+    }
   } else if (screen==1) {// ce o non ce
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
     stroke(0);
     fill(255);
@@ -283,12 +334,13 @@ void draw() {
     fill(0);
     text("non c'è", width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
   } else if (screen==2|screen==4|screen==6|screen==8) {
-    background(255);
-    stroke(0);
-    line(width/2, 0, width/2, height);
-    fill(0);
+    image(back, 0, 0, width, height);
+    stroke(255);
+    line(width/2, height/10+70, width/2, height);
+    fill(255);
     textAlign(CENTER, CENTER);
     textSize(80);
+    text("SFIDA", width/2, height/10);
 
     if (((crono1-(millis()-crono1_t0))<0&run_crono1)|crono1==0) {
       run_crono1=false;
@@ -302,13 +354,13 @@ void draw() {
         rect(width/4-120, height/4-50, 240, 100);
         fill(255, 0, 0);
         rect(width/4-120, height/4-50, 240, 100);
-        fill(0);
+        fill(255);
         text("00.000", width/4, height/4);
       } else {
         noFill();
         stroke(0);
         rect(width/4-120, height/4-50, 240, 100);
-        fill(0);
+        fill(255);
         rect(width/4-120, height/4-50, 240, 100);
         fill(255, 0, 0);
         text("00.000", width/4, height/4);
@@ -317,6 +369,7 @@ void draw() {
         show1[i]=true;
       }
     } else {
+      fill(255);
       if (run_crono1) {
         text((crono1-(millis()-crono1_t0))/1000+"."+(crono1-(millis()-crono1_t0))%1000, width/4, height/4);
       } else {
@@ -336,13 +389,13 @@ void draw() {
         rect(width*3/4-120, height/4-50, 240, 100);
         fill(255, 0, 0);
         rect(width*3/4-120, height/4-50, 240, 100);
-        fill(0);
+        fill(255);
         text("00.000", width*3/4, height/4);
       } else {
         noFill();
         stroke(0);
         rect(width*3/4-120, height/4-50, 240, 100);
-        fill(0);
+        fill(255);
         rect(width*3/4-120, height/4-50, 240, 100);
         fill(255, 0, 0);
         text("00.000", width*3/4, height/4);
@@ -351,6 +404,7 @@ void draw() {
         show2[i]=true;
       }
     } else {
+      fill(255);
       if (run_crono2) {
         text((crono2-(millis()-crono2_t0))/1000+"."+(crono2-(millis()-crono2_t0))%1000, width*3/4, height/4);
       } else {
@@ -398,11 +452,13 @@ void draw() {
         word=word+"_";
       }
     }
+    fill(255);
     if (run_crono1|alltrue(show1)) {
       text(word, 20, height*5/8, width/2-40, height/3);
       textSize(50);
       text(definizione[indice_sfida1]+"  "+indice_sfida1, 20, height/3, width/2-40, height/3);
     } else {
+      textSize(50);
       text(indice_sfida1+"", 20, height/3, width/2-40, height/3);
     }
 
@@ -443,15 +499,17 @@ void draw() {
     } else {
       textSize(60);
     }
+    fill(255);
     if (run_crono2|alltrue(show2)) {
       text(word, width/2+20, height*5/8, width/2-40, height/3);
       textSize(50);
       text(definizione[indice_sfida2]+"  "+indice_sfida2, width/2+20, height/3, width/2-40, height/3);
     } else {
+      textSize(50);
       text(indice_sfida2+"", width/2+20, height/3, width/2-40, height/3);
     }
   } else if (screen==3) {
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
     stroke(0);
     fill(255);
@@ -493,7 +551,7 @@ void draw() {
       text(chicomecosa_rispF[chicomecosa_index], width/10+(width/10)*4+10, (height/8)*5+70, (width/10)*4-10, (height/6));
     }
   } else if (screen==5) {
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
     stroke(0);
     fill(255);
@@ -566,15 +624,15 @@ void draw() {
     textSize(70);
     text("1987", width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
   } else if (screen==7) {
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
     stroke(0);
-    fill(0);
+    fill(255);
     textSize(200);
     text("PAROLONI", width/2, height/2);
   } else if (screen==9) {
     if (triello_index==0) {
-      background(255);
+      image(back, 0, 0, width, height);
       if (triello_used[0]) {
         fill(255, 255, 0);
       } else {
@@ -628,7 +686,7 @@ void draw() {
       text("meteorologia", width*3/6-width/10, height*3/6-height/12, width/5, height/6);
       text("sport", width*5/6-width/10, height*3/6-height/12, width/5, height/6);
     } else if (triello_index>=1) {
-      background(255);
+      image(back, 0, 0, width, height);
       textAlign(CENTER, CENTER);
       stroke(0);
       fill(255);
@@ -723,6 +781,50 @@ void draw() {
         text(triello_risposta2[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
       } else if (triello_pos[1]==3) {
         text(triello_risposta3[triello_index-1], width/10+(width/10)*4+10, (height/8)*5-20, (width/10)*4-10, (height/8));
+      }
+    }
+  } else if (screen==10|screen==11) {
+    image(back, 0, 0, width, height);
+    fill(255);
+    textAlign(CENTER, CENTER);
+    textSize(160);
+    if (((crono1-(millis()-crono1_t0))<0&run_crono1)|crono1==0) {
+      run_crono1=false;
+      crono1=0;
+      if (millis()%1000<500) {
+        noFill();
+        stroke(0);
+        rect(width/2-250, height/2-70, 500, 140);
+        fill(255, 0, 0);
+        rect(width/2-250, height/2-70, 500, 140);
+        fill(0);
+        text("00.000", width/2, height/2);
+      } else {
+        noFill();
+        stroke(0);
+        rect(width/2-250, height/2-70, 500, 140);
+        fill(0);
+        rect(width/2-250, height/2-70, 500, 140);
+        fill(255, 0, 0);
+        text("00.000", width/2, height/2);
+      }
+      if (screen==11&crono1<60000) {
+        fill(255);
+        text("GHIGLIOTTINA", width/2, height/4);
+      }
+    } else {
+      if (run_crono1) {
+        text((crono1-(millis()-crono1_t0))/1000+"."+(crono1-(millis()-crono1_t0))%1000, width/2, height/2);
+        if (screen==11) {
+          textSize(160);
+          text("GHIGLIOTTINA", width/2, height/4);
+        }
+      } else {
+        if (screen==11&crono1==60000) {
+          text("GHIGLIOTTINA", width/2, height/2);
+        } else {
+          text(crono1/1000+"."+crono1%1000, width/2, height/2);
+        }
       }
     }
   }
@@ -951,12 +1053,18 @@ void init() {
     triello_used[4]=false;
     triello_used[5]=false;
     triello_used[6]=false;
+  } else if (screen==10) {
+    run_crono1=false;
+    crono1=100000;
+  } else if (screen==11) {
+    run_crono1=false;
+    crono1=60000;
   }
 }
 
 void drawn() {
   if (screen==0) {
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
     stroke(0);
     fill(255);
@@ -996,7 +1104,7 @@ void drawn() {
 
     //background(255,0,0);
   } else if (screen==1) {
-    background(255);
+    image(back, 0, 0, width, height);
     textAlign(CENTER, CENTER);
     stroke(0);
     fill(255);
@@ -1104,17 +1212,23 @@ void keyPressed() {
   if (key=='s') {
     screen--;
     if (screen<0) {
-      screen=9;
+      screen=11;
     }
     init();
+    time0=millis();
   } else if (key=='d') {
     screen++;
     init();
-    if (screen>9) {
+    if (screen>11) {
       screen=0;
     }
   } else if (key=='a') {
-    if (screen==5) {
+    if (screen==3) {
+      chicomecosa_index=(int)random(chicomecosa_domande.length);
+      shuffle(chicomecosa_pos);
+      ans1=0;
+      ans2=0;
+    } else if (screen==5) {
       if (ans1==3|ans2==3|ans3==3|ans4==3) {
         if (ans1==3) {
           ans1=0;
@@ -1173,7 +1287,9 @@ void keyPressed() {
       } else if (ans1==3) {
         if (risposta) {
           ans1=2;
+          esatto.play();
         } else {
+          sbagliato.play();
           ans1=1;
           ans2=2;
         }
@@ -1203,7 +1319,9 @@ void keyPressed() {
       } else if (ans1==3) {
         if (chicomecosa_pos[0]==0) {
           ans1=2;
+          esatto.play();
         } else {
+          sbagliato.play();
           ans1=1;
           ans2=2;
         }
@@ -1217,8 +1335,10 @@ void keyPressed() {
       } else if (ans1==3) {
         if (data_anno==0) {
           ans1=2;
+          esatto.play();
         } else {
           ans1=1;
+          sbagliato.play();
           if (ans2==1&ans3==1) {
             ans4=2;
           } else if (ans4==1&ans3==1) {
@@ -1234,8 +1354,10 @@ void keyPressed() {
       } else if (ans1==3) {
         if (triello_pos[0]==0) {
           ans1=2;
+          esatto.play();
         } else {
           ans1=1;
+          sbagliato.play();
           if (ans2==1&ans3==1) {
             ans4=2;
           } else if (ans4==1&ans3==1) {
@@ -1245,6 +1367,14 @@ void keyPressed() {
           }
         }
       }
+    } else if (screen==10||screen==11) {
+      if (run_crono1) {
+        run_crono1=false;
+        crono1=crono1-(millis()-crono1_t0);
+      } else {
+        crono1_t0=millis();
+        run_crono1=true;
+      }
     }
   } else if (key=='x') {
     if (screen==1) {
@@ -1253,7 +1383,9 @@ void keyPressed() {
       } else if (ans2==3) {
         if (!risposta) {
           ans2=2;
+          esatto.play();
         } else {
+          sbagliato.play();
           ans2=1;
           ans1=2;
         }
@@ -1283,7 +1415,9 @@ void keyPressed() {
       } else if (ans2==3) {
         if (chicomecosa_pos[1]==0) {
           ans2=2;
+          esatto.play();
         } else {
+          sbagliato.play();
           ans2=1;
           ans1=2;
         }
@@ -1297,8 +1431,10 @@ void keyPressed() {
       } else if (ans2==3) {
         if (data_anno==1) {
           ans2=2;
+          esatto.play();
         } else {
           ans2=1;
+          sbagliato.play();
           if (ans1==1&ans3==1) {
             ans4=2;
           } else if (ans4==1&ans3==1) {
@@ -1314,8 +1450,10 @@ void keyPressed() {
       } else if (ans2==3) {
         if (triello_pos[1]==0) {
           ans2=2;
+          esatto.play();
         } else {
           ans2=1;
+          sbagliato.play();
           if (ans1==1&ans3==1) {
             ans4=2;
           } else if (ans4==1&ans3==1) {
@@ -1340,19 +1478,16 @@ void keyPressed() {
       println(risposta+" "+index2+" "+ans1+" "+ans2);
       ans1=0;
       ans2=0;
-    } else if (screen==3) {
-      chicomecosa_index=(int)random(chicomecosa_domande.length);
-      shuffle(chicomecosa_pos);
-      ans1=0;
-      ans2=0;
     } else if (screen==5) {
       if (ans3==0&!(ans2==3|ans1==3|ans4==3)) {
         ans3=3;
       } else if (ans3==3) {
         if (data_anno==2) {
           ans3=2;
+          esatto.play();
         } else {
           ans3=1;
+          sbagliato.play();
           if (ans2==1&ans1==1) {
             ans4=2;
           } else if (ans4==1&ans1==1) {
@@ -1368,8 +1503,10 @@ void keyPressed() {
       } else if (ans3==3) {
         if (triello_pos[2]==0) {
           ans3=2;
+          esatto.play();
         } else {
           ans3=1;
+          sbagliato.play();
           if (ans2==1&ans1==1) {
             ans4=2;
           } else if (ans4==1&ans1==1) {
@@ -1387,8 +1524,10 @@ void keyPressed() {
       } else if (ans4==3) {
         if (data_anno==3) {
           ans4=2;
+          esatto.play();
         } else {
           ans4=1;
+          sbagliato.play();
           if (ans2==1&ans3==1) {
             ans1=2;
           } else if (ans1==1&ans3==1) {
@@ -1404,8 +1543,10 @@ void keyPressed() {
       } else if (ans4==3) {
         if (triello_pos[3]==0) {
           ans4=2;
+          esatto.play();
         } else {
           ans4=1;
+          sbagliato.play();
           if (ans2==1&ans3==1) {
             ans1=2;
           } else if (ans1==1&ans3==1) {
@@ -1474,5 +1615,7 @@ void keyPressed() {
     shuffle(triello_pos);
   } else if (key=='y') {
     doppio.play();
+  } else if (key=='u') {
+    aumento.play();
   }
 }
